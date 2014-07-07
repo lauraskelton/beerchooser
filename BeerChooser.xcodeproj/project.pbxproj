@@ -26,6 +26,8 @@
 		8207298C196B46E6001C8A03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8207298A196B46E6001C8A03 /* InfoPlist.strings */; };
 		8207298E196B46E6001C8A03 /* BeerChooserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207298D196B46E6001C8A03 /* BeerChooserTests.m */; };
 		82BCCB43196B4E4400C6DE22 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82BCCB42196B4E4400C6DE22 /* README.md */; };
+		82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
+		82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
 		9B43CF20BCCF46D7B83B618F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA927CF736B4275B840F76C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,7 @@
 		8207298B196B46E6001C8A03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8207298D196B46E6001C8A03 /* BeerChooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerChooserTests.m; sourceTree = "<group>"; };
 		82BCCB42196B4E4400C6DE22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		82BCCB44196B511C00C6DE22 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		90EC9E36D98B40F498CFDD2B /* libPods-BeerChooserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeerChooserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF94CE56B21648DE941BF790 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B37E17FDFF7841B78D4707DD /* Pods-BeerChooserTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerChooserTests.xcconfig"; path = "Pods/Pods-BeerChooserTests.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				82BCCB42196B4E4400C6DE22 /* README.md */,
+				82BCCB44196B511C00C6DE22 /* .travis.yml */,
 				82072962196B46E6001C8A03 /* BeerChooser */,
 				82072987196B46E6001C8A03 /* BeerChooserTests */,
 				8207295B196B46E6001C8A03 /* Frameworks */,
@@ -281,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */,
 				82072973196B46E6001C8A03 /* Main_iPad.storyboard in Resources */,
 				8207297B196B46E6001C8A03 /* Images.xcassets in Resources */,
 				82072970196B46E6001C8A03 /* Main_iPhone.storyboard in Resources */,
@@ -292,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */,
 				8207298C196B46E6001C8A03 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8207295D196B46E6001C8A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295C196B46E6001C8A03 /* Foundation.framework */; };
+		8207295F196B46E6001C8A03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295E196B46E6001C8A03 /* CoreGraphics.framework */; };
+		82072961196B46E6001C8A03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072960196B46E6001C8A03 /* UIKit.framework */; };
+		82072967196B46E6001C8A03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82072965196B46E6001C8A03 /* InfoPlist.strings */; };
+		82072969196B46E6001C8A03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82072968196B46E6001C8A03 /* main.m */; };
+		8207296D196B46E6001C8A03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207296C196B46E6001C8A03 /* AppDelegate.m */; };
+		82072970196B46E6001C8A03 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8207296E196B46E6001C8A03 /* Main_iPhone.storyboard */; };
+		82072973196B46E6001C8A03 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82072971196B46E6001C8A03 /* Main_iPad.storyboard */; };
+		82072976196B46E6001C8A03 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82072975196B46E6001C8A03 /* FirstViewController.m */; };
+		82072979196B46E6001C8A03 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82072978196B46E6001C8A03 /* SecondViewController.m */; };
+		8207297B196B46E6001C8A03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8207297A196B46E6001C8A03 /* Images.xcassets */; };
+		82072982196B46E6001C8A03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072981196B46E6001C8A03 /* XCTest.framework */; };
+		82072983196B46E6001C8A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295C196B46E6001C8A03 /* Foundation.framework */; };
+		82072984196B46E6001C8A03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072960196B46E6001C8A03 /* UIKit.framework */; };
+		8207298C196B46E6001C8A03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8207298A196B46E6001C8A03 /* InfoPlist.strings */; };
+		8207298E196B46E6001C8A03 /* BeerChooserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207298D196B46E6001C8A03 /* BeerChooserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82072985196B46E6001C8A03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82072951196B46E6001C8A03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82072958196B46E6001C8A03;
+			remoteInfo = BeerChooser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82072959196B46E6001C8A03 /* BeerChooser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerChooser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8207295C196B46E6001C8A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8207295E196B46E6001C8A03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		82072960196B46E6001C8A03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		82072964196B46E6001C8A03 /* BeerChooser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerChooser-Info.plist"; sourceTree = "<group>"; };
+		82072966196B46E6001C8A03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82072968196B46E6001C8A03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8207296A196B46E6001C8A03 /* BeerChooser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeerChooser-Prefix.pch"; sourceTree = "<group>"; };
+		8207296B196B46E6001C8A03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8207296C196B46E6001C8A03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8207296F196B46E6001C8A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		82072972196B46E6001C8A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		82072974196B46E6001C8A03 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		82072975196B46E6001C8A03 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		82072977196B46E6001C8A03 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		82072978196B46E6001C8A03 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8207297A196B46E6001C8A03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82072980196B46E6001C8A03 /* BeerChooserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerChooserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82072981196B46E6001C8A03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		82072989196B46E6001C8A03 /* BeerChooserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerChooserTests-Info.plist"; sourceTree = "<group>"; };
+		8207298B196B46E6001C8A03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8207298D196B46E6001C8A03 /* BeerChooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerChooserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82072956196B46E6001C8A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8207295F196B46E6001C8A03 /* CoreGraphics.framework in Frameworks */,
+				82072961196B46E6001C8A03 /* UIKit.framework in Frameworks */,
+				8207295D196B46E6001C8A03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8207297D196B46E6001C8A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82072982196B46E6001C8A03 /* XCTest.framework in Frameworks */,
+				82072984196B46E6001C8A03 /* UIKit.framework in Frameworks */,
+				82072983196B46E6001C8A03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82072950196B46E6001C8A03 = {
+			isa = PBXGroup;
+			children = (
+				82072962196B46E6001C8A03 /* BeerChooser */,
+				82072987196B46E6001C8A03 /* BeerChooserTests */,
+				8207295B196B46E6001C8A03 /* Frameworks */,
+				8207295A196B46E6001C8A03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8207295A196B46E6001C8A03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82072959196B46E6001C8A03 /* BeerChooser.app */,
+				82072980196B46E6001C8A03 /* BeerChooserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8207295B196B46E6001C8A03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8207295C196B46E6001C8A03 /* Foundation.framework */,
+				8207295E196B46E6001C8A03 /* CoreGraphics.framework */,
+				82072960196B46E6001C8A03 /* UIKit.framework */,
+				82072981196B46E6001C8A03 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82072962196B46E6001C8A03 /* BeerChooser */ = {
+			isa = PBXGroup;
+			children = (
+				8207296B196B46E6001C8A03 /* AppDelegate.h */,
+				8207296C196B46E6001C8A03 /* AppDelegate.m */,
+				8207296E196B46E6001C8A03 /* Main_iPhone.storyboard */,
+				82072971196B46E6001C8A03 /* Main_iPad.storyboard */,
+				82072974196B46E6001C8A03 /* FirstViewController.h */,
+				82072975196B46E6001C8A03 /* FirstViewController.m */,
+				82072977196B46E6001C8A03 /* SecondViewController.h */,
+				82072978196B46E6001C8A03 /* SecondViewController.m */,
+				8207297A196B46E6001C8A03 /* Images.xcassets */,
+				82072963196B46E6001C8A03 /* Supporting Files */,
+			);
+			path = BeerChooser;
+			sourceTree = "<group>";
+		};
+		82072963196B46E6001C8A03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82072964196B46E6001C8A03 /* BeerChooser-Info.plist */,
+				82072965196B46E6001C8A03 /* InfoPlist.strings */,
+				82072968196B46E6001C8A03 /* main.m */,
+				8207296A196B46E6001C8A03 /* BeerChooser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82072987196B46E6001C8A03 /* BeerChooserTests */ = {
+			isa = PBXGroup;
+			children = (
+				8207298D196B46E6001C8A03 /* BeerChooserTests.m */,
+				82072988196B46E6001C8A03 /* Supporting Files */,
+			);
+			path = BeerChooserTests;
+			sourceTree = "<group>";
+		};
+		82072988196B46E6001C8A03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82072989196B46E6001C8A03 /* BeerChooserTests-Info.plist */,
+				8207298A196B46E6001C8A03 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82072958196B46E6001C8A03 /* BeerChooser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82072991196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooser" */;
+			buildPhases = (
+				82072955196B46E6001C8A03 /* Sources */,
+				82072956196B46E6001C8A03 /* Frameworks */,
+				82072957196B46E6001C8A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeerChooser;
+			productName = BeerChooser;
+			productReference = 82072959196B46E6001C8A03 /* BeerChooser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8207297F196B46E6001C8A03 /* BeerChooserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82072994196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooserTests" */;
+			buildPhases = (
+				8207297C196B46E6001C8A03 /* Sources */,
+				8207297D196B46E6001C8A03 /* Frameworks */,
+				8207297E196B46E6001C8A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82072986196B46E6001C8A03 /* PBXTargetDependency */,
+			);
+			name = BeerChooserTests;
+			productName = BeerChooserTests;
+			productReference = 82072980196B46E6001C8A03 /* BeerChooserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82072951196B46E6001C8A03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Laura Skelton";
+				TargetAttributes = {
+					8207297F196B46E6001C8A03 = {
+						TestTargetID = 82072958196B46E6001C8A03;
+					};
+				};
+			};
+			buildConfigurationList = 82072954196B46E6001C8A03 /* Build configuration list for PBXProject "BeerChooser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82072950196B46E6001C8A03;
+			productRefGroup = 8207295A196B46E6001C8A03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82072958196B46E6001C8A03 /* BeerChooser */,
+				8207297F196B46E6001C8A03 /* BeerChooserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82072957196B46E6001C8A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82072973196B46E6001C8A03 /* Main_iPad.storyboard in Resources */,
+				8207297B196B46E6001C8A03 /* Images.xcassets in Resources */,
+				82072970196B46E6001C8A03 /* Main_iPhone.storyboard in Resources */,
+				82072967196B46E6001C8A03 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8207297E196B46E6001C8A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8207298C196B46E6001C8A03 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82072955196B46E6001C8A03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82072979196B46E6001C8A03 /* SecondViewController.m in Sources */,
+				8207296D196B46E6001C8A03 /* AppDelegate.m in Sources */,
+				82072976196B46E6001C8A03 /* FirstViewController.m in Sources */,
+				82072969196B46E6001C8A03 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8207297C196B46E6001C8A03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8207298E196B46E6001C8A03 /* BeerChooserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82072986196B46E6001C8A03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82072958196B46E6001C8A03 /* BeerChooser */;
+			targetProxy = 82072985196B46E6001C8A03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82072965196B46E6001C8A03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82072966196B46E6001C8A03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8207296E196B46E6001C8A03 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8207296F196B46E6001C8A03 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		82072971196B46E6001C8A03 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82072972196B46E6001C8A03 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		8207298A196B46E6001C8A03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8207298B196B46E6001C8A03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8207298F196B46E6001C8A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82072990196B46E6001C8A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82072992196B46E6001C8A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerChooser/BeerChooser-Prefix.pch";
+				INFOPLIST_FILE = "BeerChooser/BeerChooser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82072993196B46E6001C8A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerChooser/BeerChooser-Prefix.pch";
+				INFOPLIST_FILE = "BeerChooser/BeerChooser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		82072995196B46E6001C8A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeerChooser.app/BeerChooser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerChooser/BeerChooser-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BeerChooserTests/BeerChooserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		82072996196B46E6001C8A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeerChooser.app/BeerChooser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeerChooser/BeerChooser-Prefix.pch";
+				INFOPLIST_FILE = "BeerChooserTests/BeerChooserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82072954196B46E6001C8A03 /* Build configuration list for PBXProject "BeerChooser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8207298F196B46E6001C8A03 /* Debug */,
+				82072990196B46E6001C8A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82072991196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82072992196B46E6001C8A03 /* Debug */,
+				82072993196B46E6001C8A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82072994196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82072995196B46E6001C8A03 /* Debug */,
+				82072996196B46E6001C8A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82072951196B46E6001C8A03 /* Project object */;
+}

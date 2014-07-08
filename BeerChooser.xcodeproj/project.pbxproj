@@ -1,564 +1,1346 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		8207295D196B46E6001C8A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295C196B46E6001C8A03 /* Foundation.framework */; };
-		8207295F196B46E6001C8A03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295E196B46E6001C8A03 /* CoreGraphics.framework */; };
-		82072961196B46E6001C8A03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072960196B46E6001C8A03 /* UIKit.framework */; };
-		82072967196B46E6001C8A03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82072965196B46E6001C8A03 /* InfoPlist.strings */; };
-		82072969196B46E6001C8A03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82072968196B46E6001C8A03 /* main.m */; };
-		8207296D196B46E6001C8A03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207296C196B46E6001C8A03 /* AppDelegate.m */; };
-		82072970196B46E6001C8A03 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8207296E196B46E6001C8A03 /* Main_iPhone.storyboard */; };
-		82072973196B46E6001C8A03 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82072971196B46E6001C8A03 /* Main_iPad.storyboard */; };
-		82072976196B46E6001C8A03 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82072975196B46E6001C8A03 /* FirstViewController.m */; };
-		82072979196B46E6001C8A03 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82072978196B46E6001C8A03 /* SecondViewController.m */; };
-		8207297B196B46E6001C8A03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8207297A196B46E6001C8A03 /* Images.xcassets */; };
-		82072982196B46E6001C8A03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072981196B46E6001C8A03 /* XCTest.framework */; };
-		82072983196B46E6001C8A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295C196B46E6001C8A03 /* Foundation.framework */; };
-		82072984196B46E6001C8A03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072960196B46E6001C8A03 /* UIKit.framework */; };
-		8207298C196B46E6001C8A03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8207298A196B46E6001C8A03 /* InfoPlist.strings */; };
-		8207298E196B46E6001C8A03 /* BeerChooserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207298D196B46E6001C8A03 /* BeerChooserTests.m */; };
-		82BCCB43196B4E4400C6DE22 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82BCCB42196B4E4400C6DE22 /* README.md */; };
-		82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
-		82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		82072985196B46E6001C8A03 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82072951196B46E6001C8A03 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82072958196B46E6001C8A03;
-			remoteInfo = BeerChooser;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		82072959196B46E6001C8A03 /* BeerChooser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerChooser.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8207295C196B46E6001C8A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8207295E196B46E6001C8A03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		82072960196B46E6001C8A03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		82072964196B46E6001C8A03 /* BeerChooser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerChooser-Info.plist"; sourceTree = "<group>"; };
-		82072966196B46E6001C8A03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		82072968196B46E6001C8A03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8207296A196B46E6001C8A03 /* BeerChooser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeerChooser-Prefix.pch"; sourceTree = "<group>"; };
-		8207296B196B46E6001C8A03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8207296C196B46E6001C8A03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8207296F196B46E6001C8A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		82072972196B46E6001C8A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		82072974196B46E6001C8A03 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		82072975196B46E6001C8A03 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		82072977196B46E6001C8A03 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		82072978196B46E6001C8A03 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		8207297A196B46E6001C8A03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		82072980196B46E6001C8A03 /* BeerChooserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerChooserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82072981196B46E6001C8A03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		82072989196B46E6001C8A03 /* BeerChooserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerChooserTests-Info.plist"; sourceTree = "<group>"; };
-		8207298B196B46E6001C8A03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8207298D196B46E6001C8A03 /* BeerChooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerChooserTests.m; sourceTree = "<group>"; };
-		82BCCB42196B4E4400C6DE22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		82BCCB44196B511C00C6DE22 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		82072956196B46E6001C8A03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8207295F196B46E6001C8A03 /* CoreGraphics.framework in Frameworks */,
-				82072961196B46E6001C8A03 /* UIKit.framework in Frameworks */,
-				8207295D196B46E6001C8A03 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8207297D196B46E6001C8A03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82072982196B46E6001C8A03 /* XCTest.framework in Frameworks */,
-				82072984196B46E6001C8A03 /* UIKit.framework in Frameworks */,
-				82072983196B46E6001C8A03 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		82072950196B46E6001C8A03 = {
-			isa = PBXGroup;
-			children = (
-				82BCCB42196B4E4400C6DE22 /* README.md */,
-				82BCCB44196B511C00C6DE22 /* .travis.yml */,
-				82072962196B46E6001C8A03 /* BeerChooser */,
-				82072987196B46E6001C8A03 /* BeerChooserTests */,
-				8207295B196B46E6001C8A03 /* Frameworks */,
-				8207295A196B46E6001C8A03 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		8207295A196B46E6001C8A03 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				82072959196B46E6001C8A03 /* BeerChooser.app */,
-				82072980196B46E6001C8A03 /* BeerChooserTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8207295B196B46E6001C8A03 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8207295C196B46E6001C8A03 /* Foundation.framework */,
-				8207295E196B46E6001C8A03 /* CoreGraphics.framework */,
-				82072960196B46E6001C8A03 /* UIKit.framework */,
-				82072981196B46E6001C8A03 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		82072962196B46E6001C8A03 /* BeerChooser */ = {
-			isa = PBXGroup;
-			children = (
-				82BCCB3F196B4CCD00C6DE22 /* App Delegate */,
-				82BCCB40196B4CD200C6DE22 /* View Controllers */,
-				82BCCB41196B4CD800C6DE22 /* Resources */,
-				82072963196B46E6001C8A03 /* Supporting Files */,
-			);
-			path = BeerChooser;
-			sourceTree = "<group>";
-		};
-		82072963196B46E6001C8A03 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				82072964196B46E6001C8A03 /* BeerChooser-Info.plist */,
-				82072965196B46E6001C8A03 /* InfoPlist.strings */,
-				82072968196B46E6001C8A03 /* main.m */,
-				8207296A196B46E6001C8A03 /* BeerChooser-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		82072987196B46E6001C8A03 /* BeerChooserTests */ = {
-			isa = PBXGroup;
-			children = (
-				8207298D196B46E6001C8A03 /* BeerChooserTests.m */,
-				82072988196B46E6001C8A03 /* Supporting Files */,
-			);
-			path = BeerChooserTests;
-			sourceTree = "<group>";
-		};
-		82072988196B46E6001C8A03 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				82072989196B46E6001C8A03 /* BeerChooserTests-Info.plist */,
-				8207298A196B46E6001C8A03 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		82BCCB3F196B4CCD00C6DE22 /* App Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				8207296B196B46E6001C8A03 /* AppDelegate.h */,
-				8207296C196B46E6001C8A03 /* AppDelegate.m */,
-			);
-			name = "App Delegate";
-			sourceTree = "<group>";
-		};
-		82BCCB40196B4CD200C6DE22 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				82072974196B46E6001C8A03 /* FirstViewController.h */,
-				82072975196B46E6001C8A03 /* FirstViewController.m */,
-				82072977196B46E6001C8A03 /* SecondViewController.h */,
-				82072978196B46E6001C8A03 /* SecondViewController.m */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		82BCCB41196B4CD800C6DE22 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8207296E196B46E6001C8A03 /* Main_iPhone.storyboard */,
-				82072971196B46E6001C8A03 /* Main_iPad.storyboard */,
-				8207297A196B46E6001C8A03 /* Images.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		82072958196B46E6001C8A03 /* BeerChooser */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82072991196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooser" */;
-			buildPhases = (
-				82072955196B46E6001C8A03 /* Sources */,
-				82072956196B46E6001C8A03 /* Frameworks */,
-				82072957196B46E6001C8A03 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BeerChooser;
-			productName = BeerChooser;
-			productReference = 82072959196B46E6001C8A03 /* BeerChooser.app */;
-			productType = "com.apple.product-type.application";
-		};
-		8207297F196B46E6001C8A03 /* BeerChooserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82072994196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooserTests" */;
-			buildPhases = (
-				F0069F14BA0C4E54A74CC771 /* Check Pods Manifest.lock */,
-				8207297C196B46E6001C8A03 /* Sources */,
-				8207297D196B46E6001C8A03 /* Frameworks */,
-				8207297E196B46E6001C8A03 /* Resources */,
-				310BFA5AD3A748768B481158 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				82072986196B46E6001C8A03 /* PBXTargetDependency */,
-			);
-			name = BeerChooserTests;
-			productName = BeerChooserTests;
-			productReference = 82072980196B46E6001C8A03 /* BeerChooserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		82072951196B46E6001C8A03 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Laura Skelton";
-				TargetAttributes = {
-					8207297F196B46E6001C8A03 = {
-						TestTargetID = 82072958196B46E6001C8A03;
-					};
-				};
-			};
-			buildConfigurationList = 82072954196B46E6001C8A03 /* Build configuration list for PBXProject "BeerChooser" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 82072950196B46E6001C8A03;
-			productRefGroup = 8207295A196B46E6001C8A03 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				82072958196B46E6001C8A03 /* BeerChooser */,
-				8207297F196B46E6001C8A03 /* BeerChooserTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		82072957196B46E6001C8A03 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */,
-				82072973196B46E6001C8A03 /* Main_iPad.storyboard in Resources */,
-				8207297B196B46E6001C8A03 /* Images.xcassets in Resources */,
-				82072970196B46E6001C8A03 /* Main_iPhone.storyboard in Resources */,
-				82072967196B46E6001C8A03 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8207297E196B46E6001C8A03 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */,
-				8207298C196B46E6001C8A03 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		310BFA5AD3A748768B481158 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-BeerChooserTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0069F14BA0C4E54A74CC771 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		82072955196B46E6001C8A03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82072979196B46E6001C8A03 /* SecondViewController.m in Sources */,
-				8207296D196B46E6001C8A03 /* AppDelegate.m in Sources */,
-				82BCCB43196B4E4400C6DE22 /* README.md in Sources */,
-				82072976196B46E6001C8A03 /* FirstViewController.m in Sources */,
-				82072969196B46E6001C8A03 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8207297C196B46E6001C8A03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8207298E196B46E6001C8A03 /* BeerChooserTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		82072986196B46E6001C8A03 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 82072958196B46E6001C8A03 /* BeerChooser */;
-			targetProxy = 82072985196B46E6001C8A03 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		82072965196B46E6001C8A03 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82072966196B46E6001C8A03 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8207296E196B46E6001C8A03 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8207296F196B46E6001C8A03 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		82072971196B46E6001C8A03 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82072972196B46E6001C8A03 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		8207298A196B46E6001C8A03 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8207298B196B46E6001C8A03 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		8207298F196B46E6001C8A03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		82072990196B46E6001C8A03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		82072992196B46E6001C8A03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				EXCLUDED_SOURCE_FILE_NAMES = "*README.md";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BeerChooser/BeerChooser-Prefix.pch";
-				INFOPLIST_FILE = "BeerChooser/BeerChooser-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		82072993196B46E6001C8A03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				EXCLUDED_SOURCE_FILE_NAMES = "*README.md";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BeerChooser/BeerChooser-Prefix.pch";
-				INFOPLIST_FILE = "BeerChooser/BeerChooser-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		82072995196B46E6001C8A03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeerChooser.app/BeerChooser";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BeerChooser/BeerChooser-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "BeerChooserTests/BeerChooserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		82072996196B46E6001C8A03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeerChooser.app/BeerChooser";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BeerChooser/BeerChooser-Prefix.pch";
-				INFOPLIST_FILE = "BeerChooserTests/BeerChooserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		82072954196B46E6001C8A03 /* Build configuration list for PBXProject "BeerChooser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8207298F196B46E6001C8A03 /* Debug */,
-				82072990196B46E6001C8A03 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		82072991196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooser" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82072992196B46E6001C8A03 /* Debug */,
-				82072993196B46E6001C8A03 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		82072994196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82072995196B46E6001C8A03 /* Debug */,
-				82072996196B46E6001C8A03 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 82072951196B46E6001C8A03 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1F5140EF604249E58D0439B8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D6DB41D4B04F48CFAAFF9669</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>310BFA5AD3A748768B481158</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-BeerChooserTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>4C5C890E4BA0425B9DD5EB3E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-BeerChooser.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7B70381C1642440186AF0432</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>82072950196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82BCCB42196B4E4400C6DE22</string>
+				<string>82BCCB44196B511C00C6DE22</string>
+				<string>82072962196B46E6001C8A03</string>
+				<string>82072987196B46E6001C8A03</string>
+				<string>8207295B196B46E6001C8A03</string>
+				<string>8207295A196B46E6001C8A03</string>
+				<string>BE2F3A685C5542E8BCB7D8AE</string>
+				<string>8D52D4B4AC1E4782883707A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072951196B46E6001C8A03</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Laura Skelton</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>8207297F196B46E6001C8A03</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>82072958196B46E6001C8A03</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>82072954196B46E6001C8A03</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>82072950196B46E6001C8A03</string>
+			<key>productRefGroup</key>
+			<string>8207295A196B46E6001C8A03</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>82072958196B46E6001C8A03</string>
+				<string>8207297F196B46E6001C8A03</string>
+			</array>
+		</dict>
+		<key>82072954196B46E6001C8A03</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>8207298F196B46E6001C8A03</string>
+				<string>82072990196B46E6001C8A03</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>82072955196B46E6001C8A03</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>82072979196B46E6001C8A03</string>
+				<string>8207296D196B46E6001C8A03</string>
+				<string>82BCCB43196B4E4400C6DE22</string>
+				<string>82072976196B46E6001C8A03</string>
+				<string>82072969196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>82072956196B46E6001C8A03</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8207295F196B46E6001C8A03</string>
+				<string>82072961196B46E6001C8A03</string>
+				<string>8207295D196B46E6001C8A03</string>
+				<string>EE356ECBBC83494F85439084</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>82072957196B46E6001C8A03</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>82BCCB45196B511C00C6DE22</string>
+				<string>82072973196B46E6001C8A03</string>
+				<string>8207297B196B46E6001C8A03</string>
+				<string>82072970196B46E6001C8A03</string>
+				<string>82072967196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>82072958196B46E6001C8A03</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>82072991196B46E6001C8A03</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7B70381C1642440186AF0432</string>
+				<string>82072955196B46E6001C8A03</string>
+				<string>82072956196B46E6001C8A03</string>
+				<string>82072957196B46E6001C8A03</string>
+				<string>E360FEB7633046C9AC9FDF9B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BeerChooser</string>
+			<key>productName</key>
+			<string>BeerChooser</string>
+			<key>productReference</key>
+			<string>82072959196B46E6001C8A03</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>82072959196B46E6001C8A03</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BeerChooser.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>8207295A196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82072959196B46E6001C8A03</string>
+				<string>82072980196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207295B196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8207295C196B46E6001C8A03</string>
+				<string>8207295E196B46E6001C8A03</string>
+				<string>82072960196B46E6001C8A03</string>
+				<string>82072981196B46E6001C8A03</string>
+				<string>4C5C890E4BA0425B9DD5EB3E</string>
+				<string>D6DB41D4B04F48CFAAFF9669</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207295C196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>8207295D196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8207295C196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8207295E196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>8207295F196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8207295E196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072960196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>82072961196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82072960196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072962196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82BCCB3F196B4CCD00C6DE22</string>
+				<string>82BCCB40196B4CD200C6DE22</string>
+				<string>82BCCB41196B4CD800C6DE22</string>
+				<string>82072963196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BeerChooser</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072963196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82072964196B46E6001C8A03</string>
+				<string>82072965196B46E6001C8A03</string>
+				<string>82072968196B46E6001C8A03</string>
+				<string>8207296A196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072964196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>BeerChooser-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072965196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82072966196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072966196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072967196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82072965196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072968196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072969196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82072968196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8207296A196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BeerChooser-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207296B196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207296C196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207296D196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8207296C196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8207296E196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8207296F196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207296F196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072970196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8207296E196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072971196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82072972196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072972196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072973196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82072971196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072974196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FirstViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072975196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FirstViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072976196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82072975196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072977196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SecondViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072978196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SecondViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072979196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82072978196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8207297A196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207297B196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8207297A196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8207297C196B46E6001C8A03</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8207298E196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8207297D196B46E6001C8A03</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>82072982196B46E6001C8A03</string>
+				<string>82072984196B46E6001C8A03</string>
+				<string>82072983196B46E6001C8A03</string>
+				<string>1F5140EF604249E58D0439B8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8207297E196B46E6001C8A03</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>82BCCB46196B511C00C6DE22</string>
+				<string>8207298C196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8207297F196B46E6001C8A03</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>82072994196B46E6001C8A03</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F0069F14BA0C4E54A74CC771</string>
+				<string>8207297C196B46E6001C8A03</string>
+				<string>8207297D196B46E6001C8A03</string>
+				<string>8207297E196B46E6001C8A03</string>
+				<string>310BFA5AD3A748768B481158</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>82072986196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BeerChooserTests</string>
+			<key>productName</key>
+			<string>BeerChooserTests</string>
+			<key>productReference</key>
+			<string>82072980196B46E6001C8A03</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>82072980196B46E6001C8A03</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BeerChooserTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>82072981196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>82072982196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82072981196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072983196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8207295C196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072984196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82072960196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82072985196B46E6001C8A03</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>82072951196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>82072958196B46E6001C8A03</string>
+			<key>remoteInfo</key>
+			<string>BeerChooser</string>
+		</dict>
+		<key>82072986196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>82072958196B46E6001C8A03</string>
+			<key>targetProxy</key>
+			<string>82072985196B46E6001C8A03</string>
+		</dict>
+		<key>82072987196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8207298D196B46E6001C8A03</string>
+				<string>82072988196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BeerChooserTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072988196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82072989196B46E6001C8A03</string>
+				<string>8207298A196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82072989196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>BeerChooserTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207298A196B46E6001C8A03</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8207298B196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207298B196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207298C196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8207298A196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8207298D196B46E6001C8A03</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BeerChooserTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8207298E196B46E6001C8A03</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8207298D196B46E6001C8A03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8207298F196B46E6001C8A03</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>82072990196B46E6001C8A03</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>82072991196B46E6001C8A03</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>82072992196B46E6001C8A03</string>
+				<string>82072993196B46E6001C8A03</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>82072992196B46E6001C8A03</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>BE2F3A685C5542E8BCB7D8AE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>EXCLUDED_SOURCE_FILE_NAMES</key>
+				<string>*README.md</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BeerChooser/BeerChooser-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BeerChooser/BeerChooser-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>82072993196B46E6001C8A03</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>BE2F3A685C5542E8BCB7D8AE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>EXCLUDED_SOURCE_FILE_NAMES</key>
+				<string>*README.md</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BeerChooser/BeerChooser-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BeerChooser/BeerChooser-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>82072994196B46E6001C8A03</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>82072995196B46E6001C8A03</string>
+				<string>82072996196B46E6001C8A03</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>82072995196B46E6001C8A03</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8D52D4B4AC1E4782883707A0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BeerChooser.app/BeerChooser</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BeerChooser/BeerChooser-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>BeerChooserTests/BeerChooserTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>82072996196B46E6001C8A03</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8D52D4B4AC1E4782883707A0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BeerChooser.app/BeerChooser</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BeerChooser/BeerChooser-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BeerChooserTests/BeerChooserTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>82BCCB3F196B4CCD00C6DE22</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8207296B196B46E6001C8A03</string>
+				<string>8207296C196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>App Delegate</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82BCCB40196B4CD200C6DE22</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82072974196B46E6001C8A03</string>
+				<string>82072975196B46E6001C8A03</string>
+				<string>82072977196B46E6001C8A03</string>
+				<string>82072978196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View Controllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82BCCB41196B4CD800C6DE22</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8207296E196B46E6001C8A03</string>
+				<string>82072971196B46E6001C8A03</string>
+				<string>8207297A196B46E6001C8A03</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82BCCB42196B4E4400C6DE22</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>net.daringfireball.markdown</string>
+			<key>path</key>
+			<string>README.md</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82BCCB43196B4E4400C6DE22</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82BCCB42196B4E4400C6DE22</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82BCCB44196B511C00C6DE22</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>.travis.yml</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>82BCCB45196B511C00C6DE22</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82BCCB44196B511C00C6DE22</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82BCCB46196B511C00C6DE22</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82BCCB44196B511C00C6DE22</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8D52D4B4AC1E4782883707A0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BeerChooserTests.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-BeerChooserTests.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BE2F3A685C5542E8BCB7D8AE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BeerChooser.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-BeerChooser.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D6DB41D4B04F48CFAAFF9669</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-BeerChooserTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E360FEB7633046C9AC9FDF9B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-BeerChooser-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>EE356ECBBC83494F85439084</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4C5C890E4BA0425B9DD5EB3E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F0069F14BA0C4E54A74CC771</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>82072951196B46E6001C8A03</string>
+</dict>
+</plist>

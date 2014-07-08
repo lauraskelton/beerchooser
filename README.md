@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lauraskelton/beerchooser.png)](https://travis-ci.org/lauraskelton/beerchooser)
+
 Description
 ===========
 BeerChooser Relaunch for iOS

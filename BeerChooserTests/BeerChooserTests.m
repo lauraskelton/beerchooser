@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "AppDelegate.h"
 
 @interface BeerChooserTests : XCTestCase
 
@@ -26,9 +27,14 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testAppDelegateExists {
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    if (appDelegate) {
+        XCTAssert(YES, @"Pass");
+        return;
+    }
+    XCTFail(@"AppDelegate is nil");
 }
 
 @end

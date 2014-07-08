@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34576B0E2BA24FBBBDD7705B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA927CF736B4275B840F76C /* libPods.a */; };
-		5A4B8142ECD442D799449BFB /* libPods-BeerChooserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90EC9E36D98B40F498CFDD2B /* libPods-BeerChooserTests.a */; };
 		8207295D196B46E6001C8A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295C196B46E6001C8A03 /* Foundation.framework */; };
 		8207295F196B46E6001C8A03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295E196B46E6001C8A03 /* CoreGraphics.framework */; };
 		82072961196B46E6001C8A03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072960196B46E6001C8A03 /* UIKit.framework */; };
@@ -28,8 +26,6 @@
 		82BCCB43196B4E4400C6DE22 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82BCCB42196B4E4400C6DE22 /* README.md */; };
 		82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
 		82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
-		9B43CF20BCCF46D7B83B618F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA927CF736B4275B840F76C /* libPods.a */; };
-		D8479272577444C194332B26 /* libPods-BeerChooser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9893AF2E604BCD86F83002 /* libPods-BeerChooser.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +63,6 @@
 		8207298D196B46E6001C8A03 /* BeerChooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerChooserTests.m; sourceTree = "<group>"; };
 		82BCCB42196B4E4400C6DE22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82BCCB44196B511C00C6DE22 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		862FD408EE5D420794867839 /* Pods-BeerChooser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerChooser.xcconfig"; path = "Pods/Pods-BeerChooser.xcconfig"; sourceTree = "<group>"; };
-		90EC9E36D98B40F498CFDD2B /* libPods-BeerChooserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeerChooserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB9893AF2E604BCD86F83002 /* libPods-BeerChooser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeerChooser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF94CE56B21648DE941BF790 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		B37E17FDFF7841B78D4707DD /* Pods-BeerChooserTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerChooserTests.xcconfig"; path = "Pods/Pods-BeerChooserTests.xcconfig"; sourceTree = "<group>"; };
-		EAA927CF736B4275B840F76C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34576B0E2BA24FBBBDD7705B /* libPods.a in Frameworks */,
-				D8479272577444C194332B26 /* libPods-BeerChooser.a in Frameworks */,
 				8207295F196B46E6001C8A03 /* CoreGraphics.framework in Frameworks */,
 				82072961196B46E6001C8A03 /* UIKit.framework in Frameworks */,
 				8207295D196B46E6001C8A03 /* Foundation.framework in Frameworks */,
@@ -95,8 +83,6 @@
 				82072982196B46E6001C8A03 /* XCTest.framework in Frameworks */,
 				82072984196B46E6001C8A03 /* UIKit.framework in Frameworks */,
 				82072983196B46E6001C8A03 /* Foundation.framework in Frameworks */,
-				9B43CF20BCCF46D7B83B618F /* libPods.a in Frameworks */,
-				5A4B8142ECD442D799449BFB /* libPods-BeerChooserTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +98,6 @@
 				82072987196B46E6001C8A03 /* BeerChooserTests */,
 				8207295B196B46E6001C8A03 /* Frameworks */,
 				8207295A196B46E6001C8A03 /* Products */,
-				AF94CE56B21648DE941BF790 /* Pods.xcconfig */,
-				B37E17FDFF7841B78D4707DD /* Pods-BeerChooserTests.xcconfig */,
-				862FD408EE5D420794867839 /* Pods-BeerChooser.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +117,6 @@
 				8207295E196B46E6001C8A03 /* CoreGraphics.framework */,
 				82072960196B46E6001C8A03 /* UIKit.framework */,
 				82072981196B46E6001C8A03 /* XCTest.framework */,
-				EAA927CF736B4275B840F76C /* libPods.a */,
-				90EC9E36D98B40F498CFDD2B /* libPods-BeerChooserTests.a */,
-				AB9893AF2E604BCD86F83002 /* libPods-BeerChooser.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,11 +198,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82072991196B46E6001C8A03 /* Build configuration list for PBXNativeTarget "BeerChooser" */;
 			buildPhases = (
-				9E4EC9D4235C4B158F0F4B50 /* Check Pods Manifest.lock */,
 				82072955196B46E6001C8A03 /* Sources */,
 				82072956196B46E6001C8A03 /* Frameworks */,
 				82072957196B46E6001C8A03 /* Resources */,
-				A5AB2A761B77470E89C7F45A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,36 +302,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-BeerChooserTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E4EC9D4235C4B158F0F4B50 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A5AB2A761B77470E89C7F45A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-BeerChooser-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F0069F14BA0C4E54A74CC771 /* Check Pods Manifest.lock */ = {
@@ -514,7 +462,6 @@
 		};
 		82072992196B46E6001C8A03 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 862FD408EE5D420794867839 /* Pods-BeerChooser.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -529,7 +476,6 @@
 		};
 		82072993196B46E6001C8A03 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 862FD408EE5D420794867839 /* Pods-BeerChooser.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -544,7 +490,6 @@
 		};
 		82072995196B46E6001C8A03 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B37E17FDFF7841B78D4707DD /* Pods-BeerChooserTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeerChooser.app/BeerChooser";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -567,7 +512,6 @@
 		};
 		82072996196B46E6001C8A03 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B37E17FDFF7841B78D4707DD /* Pods-BeerChooserTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeerChooser.app/BeerChooser";
 				FRAMEWORK_SEARCH_PATHS = (

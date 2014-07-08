@@ -1,8 +1,6 @@
 BeerChooser [![Build Status](https://travis-ci.org/lauraskelton/beerchooser.svg?branch=master)](https://travis-ci.org/lauraskelton/beerchooser)
 ===========
 
-Description
-===========
 BeerChooser Relaunch for iOS
 
 BeerChooser was the first iOS app I created back in 2010. It was a featured app in the Lifestyle section of the App Store. I'm working on a completely new relaunch of the app using everything I've learned since then to make it way more awesome.

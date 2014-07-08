@@ -1,6 +1,5 @@
-Status
+BeerChooser [![Build Status](https://travis-ci.org/lauraskelton/beerchooser.svg?branch=master)](https://travis-ci.org/lauraskelton/beerchooser)
 ===========
-[![Build Status](https://travis-ci.org/lauraskelton/beerchooser.svg?branch=master)](https://travis-ci.org/lauraskelton/beerchooser)
 
 Description
 ===========

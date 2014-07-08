@@ -1,6 +1,6 @@
 platform :ios, '7.0'
 
-link_with "BeerChooser", "BeerChooserTests"
+link_with "BeerChooser"
 pod "AFNetworking", "~> 2.0"
 
 target "BeerChooserTests" do

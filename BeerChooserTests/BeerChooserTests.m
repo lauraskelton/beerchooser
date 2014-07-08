@@ -27,14 +27,6 @@
     [super tearDown];
 }
 
-- (void)testAppDelegateExists {
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    
-    if (appDelegate) {
-        XCTAssert(YES, @"Pass");
-        return;
-    }
-    XCTFail(@"AppDelegate is nil");
-}
+
 
 @end

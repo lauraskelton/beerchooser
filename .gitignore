@@ -19,7 +19,6 @@
 
 .DS_Store
 *.swp
-*.lock
 profile
 
 
@@ -129,8 +128,6 @@ xcuserdata
 # pod install
 # in the App.xcodeproj directory.
 # This ensures the latest dependencies are used.
-Pods/
-Podfile.lock
 
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are

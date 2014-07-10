@@ -24,9 +24,9 @@
 		82072984196B46E6001C8A03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072960196B46E6001C8A03 /* UIKit.framework */; };
 		8207298C196B46E6001C8A03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8207298A196B46E6001C8A03 /* InfoPlist.strings */; };
 		8207298E196B46E6001C8A03 /* BeerChooserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207298D196B46E6001C8A03 /* BeerChooserTests.m */; };
-		82764DA3196EF603004D26E7 /* Configuration.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82764D9F196EF603004D26E7 /* Configuration.example.plist */; };
 		82764DA4196EF603004D26E7 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DA1196EF603004D26E7 /* Configuration.m */; };
-		82764DA5196EF603004D26E7 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82764DA2196EF603004D26E7 /* Configuration.plist */; };
+		82764DB0196F1954004D26E7 /* Configuration.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82764DAE196F1954004D26E7 /* Configuration.example.plist */; };
+		82764DB1196F1954004D26E7 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82764DAF196F1954004D26E7 /* Configuration.plist */; };
 		82BCCB43196B4E4400C6DE22 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82BCCB42196B4E4400C6DE22 /* README.md */; };
 		82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
 		82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
@@ -67,10 +67,10 @@
 		82072989196B46E6001C8A03 /* BeerChooserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerChooserTests-Info.plist"; sourceTree = "<group>"; };
 		8207298B196B46E6001C8A03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8207298D196B46E6001C8A03 /* BeerChooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerChooserTests.m; sourceTree = "<group>"; };
-		82764D9F196EF603004D26E7 /* Configuration.example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.example.plist; sourceTree = "<group>"; };
 		82764DA0196EF603004D26E7 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		82764DA1196EF603004D26E7 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
-		82764DA2196EF603004D26E7 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		82764DAE196F1954004D26E7 /* Configuration.example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.example.plist; sourceTree = SOURCE_ROOT; };
+		82764DAF196F1954004D26E7 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = SOURCE_ROOT; };
 		82BCCB42196B4E4400C6DE22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82BCCB44196B511C00C6DE22 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		8D52D4B4AC1E4782883707A0 /* Pods-BeerChooserTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerChooserTests.xcconfig"; path = "Pods/Pods-BeerChooserTests.xcconfig"; sourceTree = "<group>"; };
@@ -192,8 +192,8 @@
 		82764D9E196EF5D0004D26E7 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				82764DA2196EF603004D26E7 /* Configuration.plist */,
-				82764D9F196EF603004D26E7 /* Configuration.example.plist */,
+				82764DAE196F1954004D26E7 /* Configuration.example.plist */,
+				82764DAF196F1954004D26E7 /* Configuration.plist */,
 				82764DA0196EF603004D26E7 /* Configuration.h */,
 				82764DA1196EF603004D26E7 /* Configuration.m */,
 			);
@@ -312,9 +312,9 @@
 			files = (
 				82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */,
 				82072973196B46E6001C8A03 /* Main_iPad.storyboard in Resources */,
-				82764DA5196EF603004D26E7 /* Configuration.plist in Resources */,
+				82764DB1196F1954004D26E7 /* Configuration.plist in Resources */,
 				8207297B196B46E6001C8A03 /* Images.xcassets in Resources */,
-				82764DA3196EF603004D26E7 /* Configuration.example.plist in Resources */,
+				82764DB0196F1954004D26E7 /* Configuration.example.plist in Resources */,
 				82072970196B46E6001C8A03 /* Main_iPhone.storyboard in Resources */,
 				82072967196B46E6001C8A03 /* InfoPlist.strings in Resources */,
 			);

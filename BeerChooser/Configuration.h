@@ -10,8 +10,8 @@
 
 @interface Configuration : NSObject
 
-@property (nonatomic, readonly) NSString *hackerschoolClientID;
-@property (nonatomic, readonly) NSString *hackerschoolClientSecret;
+@property (nonatomic, readonly) NSString *beerChooserClientID;
+@property (nonatomic, readonly) NSString *beerChooserClientSecret;
 @property (nonatomic, readonly) NSString *testFlightAppID;
 
 @end

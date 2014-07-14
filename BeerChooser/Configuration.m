@@ -8,7 +8,7 @@
 
 #import "Configuration.h"
 
-static NSString * const HackerSchoolDictKey = @"HackerSchoolAPI";
+static NSString * const BeerChooserDictKey = @"BeerChooserAPI";
 static NSString * const TestFlightDictKey = @"TestFlightAPI";
 
 @interface Configuration ()
@@ -35,11 +35,11 @@ static NSString * const TestFlightDictKey = @"TestFlightAPI";
 }
 
 - (NSString *)hackerschoolClientID {
-    return self.plist[HackerSchoolDictKey][@"ClientID"];
+    return self.plist[BeerChooserDictKey][@"ClientID"];
 }
 
 - (NSString *)hackerschoolClientSecret {
-    return self.plist[HackerSchoolDictKey][@"ClientSecret"];
+    return self.plist[BeerChooserDictKey][@"ClientSecret"];
 }
 
 - (NSString *)testFlightAppID {

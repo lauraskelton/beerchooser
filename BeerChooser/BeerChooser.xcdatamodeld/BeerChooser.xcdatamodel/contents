@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Beer" representedClassName="ManagedBeer" syncable="YES">
+        <attribute name="beerDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beerID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="beerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brewery" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="predictedRating" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="rateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="styleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toDrinkIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userRating" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Beer" positionX="-63" positionY="-18" width="128" height="193"/>
+    </elements>
+</model>

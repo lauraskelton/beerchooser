@@ -49,6 +49,43 @@
 		82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
 		82C1A56219742D4500A964B4 /* BeerChooserAPINetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A56119742D4500A964B4 /* BeerChooserAPINetwork.m */; };
 		82C1A5651974597700A964B4 /* BeerChooserAPIDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A5641974597700A964B4 /* BeerChooserAPIDataManager.m */; };
+		82C1A56E19747AB000A964B4 /* RatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A56D19747AB000A964B4 /* RatingView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		82C1A57819747D9200A964B4 /* BeerRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A57719747D9200A964B4 /* BeerRatingView.m */; };
+		82C1A5831974864B00A964B4 /* BeerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A5811974864B00A964B4 /* BeerTableViewCell.m */; };
+		82C1A5841974864B00A964B4 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5821974864B00A964B4 /* BeerTableViewCell.xib */; };
+		82C1A59C19748CA300A964B4 /* beer-1qselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A58E19748CA300A964B4 /* beer-1qselected.png */; };
+		82C1A59D19748CA300A964B4 /* beer-1qselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A58F19748CA300A964B4 /* beer-1qselected@2x.png */; };
+		82C1A59E19748CA300A964B4 /* beer-3qselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59019748CA300A964B4 /* beer-3qselected.png */; };
+		82C1A59F19748CA300A964B4 /* beer-3qselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59119748CA300A964B4 /* beer-3qselected@2x.png */; };
+		82C1A5A019748CA300A964B4 /* beer-halfselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59219748CA300A964B4 /* beer-halfselected.png */; };
+		82C1A5A119748CA300A964B4 /* beer-halfselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59319748CA300A964B4 /* beer-halfselected@2x.png */; };
+		82C1A5A219748CA300A964B4 /* beer-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59419748CA300A964B4 /* beer-highlighted.png */; };
+		82C1A5A319748CA300A964B4 /* beer-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59519748CA300A964B4 /* beer-highlighted@2x.png */; };
+		82C1A5A419748CA300A964B4 /* beer-hot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59619748CA300A964B4 /* beer-hot@2x.png */; };
+		82C1A5A519748CA300A964B4 /* beer-nonselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59719748CA300A964B4 /* beer-nonselected.png */; };
+		82C1A5A619748CA300A964B4 /* beer-nonselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59819748CA300A964B4 /* beer-nonselected@2x.png */; };
+		82C1A5A719748CA300A964B4 /* beer-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59919748CA300A964B4 /* beer-selected.png */; };
+		82C1A5A819748CA300A964B4 /* beer-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59A19748CA300A964B4 /* beer-selected@2x.png */; };
+		82C1A5A919748CA300A964B4 /* beer-userselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A59B19748CA300A964B4 /* beer-userselected@2x.png */; };
+		82C1A5B319748CB700A964B4 /* small-beer-1qselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5AA19748CB700A964B4 /* small-beer-1qselected.png */; };
+		82C1A5B419748CB700A964B4 /* small-beer-1qselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5AB19748CB700A964B4 /* small-beer-1qselected@2x.png */; };
+		82C1A5B519748CB700A964B4 /* small-beer-3qselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5AC19748CB700A964B4 /* small-beer-3qselected.png */; };
+		82C1A5B619748CB700A964B4 /* small-beer-3qselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5AD19748CB700A964B4 /* small-beer-3qselected@2x.png */; };
+		82C1A5B719748CB700A964B4 /* small-beer-halfselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5AE19748CB700A964B4 /* small-beer-halfselected.png */; };
+		82C1A5B819748CB700A964B4 /* small-beer-halfselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5AF19748CB700A964B4 /* small-beer-halfselected@2x.png */; };
+		82C1A5B919748CB700A964B4 /* small-beer-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5B019748CB700A964B4 /* small-beer-highlighted.png */; };
+		82C1A5BA19748CB700A964B4 /* small-beer-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5B119748CB700A964B4 /* small-beer-highlighted@2x.png */; };
+		82C1A5BB19748CB700A964B4 /* small-beer-hot.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5B219748CB700A964B4 /* small-beer-hot.png */; };
+		82C1A5BE19748CC900A964B4 /* beer-hot.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5BC19748CC900A964B4 /* beer-hot.png */; };
+		82C1A5BF19748CC900A964B4 /* beer-userselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5BD19748CC900A964B4 /* beer-userselected.png */; };
+		82C1A5C719748CD900A964B4 /* small-beer-hot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5C019748CD900A964B4 /* small-beer-hot@2x.png */; };
+		82C1A5C819748CD900A964B4 /* small-beer-nonselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5C119748CD900A964B4 /* small-beer-nonselected.png */; };
+		82C1A5C919748CD900A964B4 /* small-beer-nonselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5C219748CD900A964B4 /* small-beer-nonselected@2x.png */; };
+		82C1A5CA19748CD900A964B4 /* small-beer-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5C319748CD900A964B4 /* small-beer-selected.png */; };
+		82C1A5CB19748CD900A964B4 /* small-beer-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5C419748CD900A964B4 /* small-beer-selected@2x.png */; };
+		82C1A5CC19748CD900A964B4 /* small-beer-userselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5C519748CD900A964B4 /* small-beer-userselected.png */; };
+		82C1A5CD19748CD900A964B4 /* small-beer-userselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5C619748CD900A964B4 /* small-beer-userselected@2x.png */; };
+		82C1A5CF19748CEB00A964B4 /* blankimg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5CE19748CEB00A964B4 /* blankimg.gif */; };
 		EE356ECBBC83494F85439084 /* libPods-BeerChooser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5C890E4BA0425B9DD5EB3E /* libPods-BeerChooser.a */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +170,46 @@
 		82C1A5631974597700A964B4 /* BeerChooserAPIDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerChooserAPIDataManager.h; sourceTree = "<group>"; };
 		82C1A5641974597700A964B4 /* BeerChooserAPIDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerChooserAPIDataManager.m; sourceTree = "<group>"; };
 		82C1A569197461B600A964B4 /* BeerChooserAPINetworkDelegateInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerChooserAPINetworkDelegateInterface.h; sourceTree = "<group>"; };
+		82C1A56C19747AB000A964B4 /* RatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingView.h; sourceTree = "<group>"; };
+		82C1A56D19747AB000A964B4 /* RatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingView.m; sourceTree = "<group>"; };
+		82C1A57619747D9200A964B4 /* BeerRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerRatingView.h; sourceTree = "<group>"; };
+		82C1A57719747D9200A964B4 /* BeerRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerRatingView.m; sourceTree = "<group>"; };
+		82C1A5801974864B00A964B4 /* BeerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerTableViewCell.h; sourceTree = "<group>"; };
+		82C1A5811974864B00A964B4 /* BeerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerTableViewCell.m; sourceTree = "<group>"; };
+		82C1A5821974864B00A964B4 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
+		82C1A58E19748CA300A964B4 /* beer-1qselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-1qselected.png"; sourceTree = "<group>"; };
+		82C1A58F19748CA300A964B4 /* beer-1qselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-1qselected@2x.png"; sourceTree = "<group>"; };
+		82C1A59019748CA300A964B4 /* beer-3qselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-3qselected.png"; sourceTree = "<group>"; };
+		82C1A59119748CA300A964B4 /* beer-3qselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-3qselected@2x.png"; sourceTree = "<group>"; };
+		82C1A59219748CA300A964B4 /* beer-halfselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-halfselected.png"; sourceTree = "<group>"; };
+		82C1A59319748CA300A964B4 /* beer-halfselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-halfselected@2x.png"; sourceTree = "<group>"; };
+		82C1A59419748CA300A964B4 /* beer-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-highlighted.png"; sourceTree = "<group>"; };
+		82C1A59519748CA300A964B4 /* beer-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-highlighted@2x.png"; sourceTree = "<group>"; };
+		82C1A59619748CA300A964B4 /* beer-hot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-hot@2x.png"; sourceTree = "<group>"; };
+		82C1A59719748CA300A964B4 /* beer-nonselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-nonselected.png"; sourceTree = "<group>"; };
+		82C1A59819748CA300A964B4 /* beer-nonselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-nonselected@2x.png"; sourceTree = "<group>"; };
+		82C1A59919748CA300A964B4 /* beer-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-selected.png"; sourceTree = "<group>"; };
+		82C1A59A19748CA300A964B4 /* beer-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-selected@2x.png"; sourceTree = "<group>"; };
+		82C1A59B19748CA300A964B4 /* beer-userselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-userselected@2x.png"; sourceTree = "<group>"; };
+		82C1A5AA19748CB700A964B4 /* small-beer-1qselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-1qselected.png"; sourceTree = "<group>"; };
+		82C1A5AB19748CB700A964B4 /* small-beer-1qselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-1qselected@2x.png"; sourceTree = "<group>"; };
+		82C1A5AC19748CB700A964B4 /* small-beer-3qselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-3qselected.png"; sourceTree = "<group>"; };
+		82C1A5AD19748CB700A964B4 /* small-beer-3qselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-3qselected@2x.png"; sourceTree = "<group>"; };
+		82C1A5AE19748CB700A964B4 /* small-beer-halfselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-halfselected.png"; sourceTree = "<group>"; };
+		82C1A5AF19748CB700A964B4 /* small-beer-halfselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-halfselected@2x.png"; sourceTree = "<group>"; };
+		82C1A5B019748CB700A964B4 /* small-beer-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-highlighted.png"; sourceTree = "<group>"; };
+		82C1A5B119748CB700A964B4 /* small-beer-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-highlighted@2x.png"; sourceTree = "<group>"; };
+		82C1A5B219748CB700A964B4 /* small-beer-hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-hot.png"; sourceTree = "<group>"; };
+		82C1A5BC19748CC900A964B4 /* beer-hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-hot.png"; sourceTree = "<group>"; };
+		82C1A5BD19748CC900A964B4 /* beer-userselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beer-userselected.png"; sourceTree = "<group>"; };
+		82C1A5C019748CD900A964B4 /* small-beer-hot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-hot@2x.png"; sourceTree = "<group>"; };
+		82C1A5C119748CD900A964B4 /* small-beer-nonselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-nonselected.png"; sourceTree = "<group>"; };
+		82C1A5C219748CD900A964B4 /* small-beer-nonselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-nonselected@2x.png"; sourceTree = "<group>"; };
+		82C1A5C319748CD900A964B4 /* small-beer-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-selected.png"; sourceTree = "<group>"; };
+		82C1A5C419748CD900A964B4 /* small-beer-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-selected@2x.png"; sourceTree = "<group>"; };
+		82C1A5C519748CD900A964B4 /* small-beer-userselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-userselected.png"; sourceTree = "<group>"; };
+		82C1A5C619748CD900A964B4 /* small-beer-userselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "small-beer-userselected@2x.png"; sourceTree = "<group>"; };
+		82C1A5CE19748CEB00A964B4 /* blankimg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = blankimg.gif; sourceTree = "<group>"; };
 		8D52D4B4AC1E4782883707A0 /* Pods-BeerChooserTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerChooserTests.xcconfig"; path = "Pods/Pods-BeerChooserTests.xcconfig"; sourceTree = "<group>"; };
 		BE2F3A685C5542E8BCB7D8AE /* Pods-BeerChooser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerChooser.xcconfig"; path = "Pods/Pods-BeerChooser.xcconfig"; sourceTree = "<group>"; };
 		D6DB41D4B04F48CFAAFF9669 /* libPods-BeerChooserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeerChooserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -264,6 +341,7 @@
 		82764DB2196F19EA004D26E7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				82E9CC821975AB3E00D90598 /* Pages */,
 				82C1A55C19742A2400A964B4 /* API */,
 				82764DCB196F23C4004D26E7 /* Categories */,
 				82764D9E196EF5D0004D26E7 /* Configuration */,
@@ -333,6 +411,8 @@
 		82764DCB196F23C4004D26E7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				82C1A585197489FC00A964B4 /* Logs */,
+				82C1A56F19747C9600A964B4 /* RatingView */,
 				82764DCC196F23EA004D26E7 /* NSArray+POBJ.h */,
 				82764DCD196F23EA004D26E7 /* NSArray+POBJ.m */,
 			);
@@ -448,6 +528,7 @@
 		82BCCB41196B4CD800C6DE22 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				82C1A58B19748C5C00A964B4 /* RatingImages */,
 				8207296E196B46E6001C8A03 /* Main_iPhone.storyboard */,
 				82072971196B46E6001C8A03 /* Main_iPad.storyboard */,
 				8207297A196B46E6001C8A03 /* Images.xcassets */,
@@ -489,6 +570,90 @@
 				82C1A569197461B600A964B4 /* BeerChooserAPINetworkDelegateInterface.h */,
 			);
 			name = Interface;
+			sourceTree = "<group>";
+		};
+		82C1A56F19747C9600A964B4 /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				82C1A56C19747AB000A964B4 /* RatingView.h */,
+				82C1A56D19747AB000A964B4 /* RatingView.m */,
+				82C1A57619747D9200A964B4 /* BeerRatingView.h */,
+				82C1A57719747D9200A964B4 /* BeerRatingView.m */,
+				82C1A5801974864B00A964B4 /* BeerTableViewCell.h */,
+				82C1A5811974864B00A964B4 /* BeerTableViewCell.m */,
+				82C1A5821974864B00A964B4 /* BeerTableViewCell.xib */,
+			);
+			name = RatingView;
+			sourceTree = "<group>";
+		};
+		82C1A585197489FC00A964B4 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logs;
+			sourceTree = "<group>";
+		};
+		82C1A58B19748C5C00A964B4 /* RatingImages */ = {
+			isa = PBXGroup;
+			children = (
+				82C1A5CE19748CEB00A964B4 /* blankimg.gif */,
+				82C1A58D19748C7800A964B4 /* Small */,
+				82C1A58C19748C7300A964B4 /* Large */,
+			);
+			name = RatingImages;
+			sourceTree = "<group>";
+		};
+		82C1A58C19748C7300A964B4 /* Large */ = {
+			isa = PBXGroup;
+			children = (
+				82C1A5BC19748CC900A964B4 /* beer-hot.png */,
+				82C1A5BD19748CC900A964B4 /* beer-userselected.png */,
+				82C1A58E19748CA300A964B4 /* beer-1qselected.png */,
+				82C1A58F19748CA300A964B4 /* beer-1qselected@2x.png */,
+				82C1A59019748CA300A964B4 /* beer-3qselected.png */,
+				82C1A59119748CA300A964B4 /* beer-3qselected@2x.png */,
+				82C1A59219748CA300A964B4 /* beer-halfselected.png */,
+				82C1A59319748CA300A964B4 /* beer-halfselected@2x.png */,
+				82C1A59419748CA300A964B4 /* beer-highlighted.png */,
+				82C1A59519748CA300A964B4 /* beer-highlighted@2x.png */,
+				82C1A59619748CA300A964B4 /* beer-hot@2x.png */,
+				82C1A59719748CA300A964B4 /* beer-nonselected.png */,
+				82C1A59819748CA300A964B4 /* beer-nonselected@2x.png */,
+				82C1A59919748CA300A964B4 /* beer-selected.png */,
+				82C1A59A19748CA300A964B4 /* beer-selected@2x.png */,
+				82C1A59B19748CA300A964B4 /* beer-userselected@2x.png */,
+			);
+			name = Large;
+			sourceTree = "<group>";
+		};
+		82C1A58D19748C7800A964B4 /* Small */ = {
+			isa = PBXGroup;
+			children = (
+				82C1A5AA19748CB700A964B4 /* small-beer-1qselected.png */,
+				82C1A5AB19748CB700A964B4 /* small-beer-1qselected@2x.png */,
+				82C1A5AC19748CB700A964B4 /* small-beer-3qselected.png */,
+				82C1A5AD19748CB700A964B4 /* small-beer-3qselected@2x.png */,
+				82C1A5AE19748CB700A964B4 /* small-beer-halfselected.png */,
+				82C1A5AF19748CB700A964B4 /* small-beer-halfselected@2x.png */,
+				82C1A5B019748CB700A964B4 /* small-beer-highlighted.png */,
+				82C1A5B119748CB700A964B4 /* small-beer-highlighted@2x.png */,
+				82C1A5B219748CB700A964B4 /* small-beer-hot.png */,
+				82C1A5C019748CD900A964B4 /* small-beer-hot@2x.png */,
+				82C1A5C119748CD900A964B4 /* small-beer-nonselected.png */,
+				82C1A5C219748CD900A964B4 /* small-beer-nonselected@2x.png */,
+				82C1A5C319748CD900A964B4 /* small-beer-selected.png */,
+				82C1A5C419748CD900A964B4 /* small-beer-selected@2x.png */,
+				82C1A5C519748CD900A964B4 /* small-beer-userselected.png */,
+				82C1A5C619748CD900A964B4 /* small-beer-userselected@2x.png */,
+			);
+			name = Small;
+			sourceTree = "<group>";
+		};
+		82E9CC821975AB3E00D90598 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,13 +736,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C1A5B819748CB700A964B4 /* small-beer-halfselected@2x.png in Resources */,
+				82C1A5A919748CA300A964B4 /* beer-userselected@2x.png in Resources */,
+				82C1A5B619748CB700A964B4 /* small-beer-3qselected@2x.png in Resources */,
+				82C1A5BF19748CC900A964B4 /* beer-userselected.png in Resources */,
+				82C1A5A519748CA300A964B4 /* beer-nonselected.png in Resources */,
+				82C1A5A319748CA300A964B4 /* beer-highlighted@2x.png in Resources */,
+				82C1A5C719748CD900A964B4 /* small-beer-hot@2x.png in Resources */,
+				82C1A59C19748CA300A964B4 /* beer-1qselected.png in Resources */,
+				82C1A59D19748CA300A964B4 /* beer-1qselected@2x.png in Resources */,
+				82C1A5CB19748CD900A964B4 /* small-beer-selected@2x.png in Resources */,
 				82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */,
+				82C1A5A019748CA300A964B4 /* beer-halfselected.png in Resources */,
+				82C1A5CD19748CD900A964B4 /* small-beer-userselected@2x.png in Resources */,
 				82072973196B46E6001C8A03 /* Main_iPad.storyboard in Resources */,
+				82C1A5B519748CB700A964B4 /* small-beer-3qselected.png in Resources */,
+				82C1A5CA19748CD900A964B4 /* small-beer-selected.png in Resources */,
+				82C1A59E19748CA300A964B4 /* beer-3qselected.png in Resources */,
 				82764DB1196F1954004D26E7 /* Configuration.plist in Resources */,
+				82C1A5C919748CD900A964B4 /* small-beer-nonselected@2x.png in Resources */,
 				8207297B196B46E6001C8A03 /* Images.xcassets in Resources */,
+				82C1A5B719748CB700A964B4 /* small-beer-halfselected.png in Resources */,
+				82C1A5A119748CA300A964B4 /* beer-halfselected@2x.png in Resources */,
+				82C1A5C819748CD900A964B4 /* small-beer-nonselected.png in Resources */,
+				82C1A5B919748CB700A964B4 /* small-beer-highlighted.png in Resources */,
 				82764DB0196F1954004D26E7 /* Configuration.example.plist in Resources */,
+				82C1A5A719748CA300A964B4 /* beer-selected.png in Resources */,
+				82C1A5A219748CA300A964B4 /* beer-highlighted.png in Resources */,
+				82C1A5BB19748CB700A964B4 /* small-beer-hot.png in Resources */,
+				82C1A5BE19748CC900A964B4 /* beer-hot.png in Resources */,
+				82C1A5CC19748CD900A964B4 /* small-beer-userselected.png in Resources */,
+				82C1A5A819748CA300A964B4 /* beer-selected@2x.png in Resources */,
+				82C1A5A619748CA300A964B4 /* beer-nonselected@2x.png in Resources */,
 				82072970196B46E6001C8A03 /* Main_iPhone.storyboard in Resources */,
+				82C1A5841974864B00A964B4 /* BeerTableViewCell.xib in Resources */,
+				82C1A5BA19748CB700A964B4 /* small-beer-highlighted@2x.png in Resources */,
+				82C1A5B319748CB700A964B4 /* small-beer-1qselected.png in Resources */,
 				82072967196B46E6001C8A03 /* InfoPlist.strings in Resources */,
+				82C1A5CF19748CEB00A964B4 /* blankimg.gif in Resources */,
+				82C1A5B419748CB700A964B4 /* small-beer-1qselected@2x.png in Resources */,
+				82C1A5A419748CA300A964B4 /* beer-hot@2x.png in Resources */,
+				82C1A59F19748CA300A964B4 /* beer-3qselected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,8 +868,11 @@
 				82283720196F55B000BF03C6 /* BrowseWireframe.m in Sources */,
 				82BCCB43196B4E4400C6DE22 /* README.md in Sources */,
 				82764DEE196F2F59004D26E7 /* BrowseBeersDisplaySection.m in Sources */,
+				82C1A57819747D9200A964B4 /* BeerRatingView.m in Sources */,
 				82764DB6196F1A29004D26E7 /* BeerChooser.xcdatamodeld in Sources */,
+				82C1A5831974864B00A964B4 /* BeerTableViewCell.m in Sources */,
 				82764DE8196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m in Sources */,
+				82C1A56E19747AB000A964B4 /* RatingView.m in Sources */,
 				82764DE5196F2AD0004D26E7 /* BrowsePresenter.m in Sources */,
 				82764DF4196F324F004D26E7 /* BrowseViewController.m in Sources */,
 				82764DCE196F23EA004D26E7 /* NSArray+POBJ.m in Sources */,

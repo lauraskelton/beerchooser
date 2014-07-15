@@ -18,4 +18,6 @@
 
 @property (nonatomic, strong) id<BrowseModuleInterface>    eventHandler;
 
+-(IBAction)refreshData:(id)sender;
+
 @end

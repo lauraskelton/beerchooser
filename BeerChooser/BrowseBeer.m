@@ -13,8 +13,8 @@
 
 @property (nonatomic, strong) NSString*                 beerName;
 @property (nonatomic, copy)   NSString*               brewery;
-@property (nonatomic, copy)   NSNumber*               numBeers;
-@property (nonatomic, copy)   NSNumber*               isRated;
+@property (nonatomic, copy)   NSNumber*               userRating;
+@property (nonatomic, copy)   NSNumber*               predictedRating;
 
 @end
 
@@ -23,15 +23,15 @@
 
 + (instancetype)browseBeerWithName:(NSString *)beerName
                            brewery:(NSString *)brewery
-                          numBeers:(NSNumber *)numBeers
-                           isRated:(NSNumber *)isRated
+                        userRating:(NSNumber *)userRating
+                   predictedRating:(NSNumber *)predictedRating
 {
     BrowseBeer *browseBeer = [[BrowseBeer alloc] init];
     
     browseBeer.beerName = beerName;
     browseBeer.brewery = brewery;
-    browseBeer.numBeers = numBeers;
-    browseBeer.isRated = isRated;
+    browseBeer.userRating = userRating;
+    browseBeer.predictedRating = predictedRating;
     
     return browseBeer;
 }

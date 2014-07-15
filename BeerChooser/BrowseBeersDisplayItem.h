@@ -12,9 +12,9 @@
 @interface BrowseBeersDisplayItem : NSObject
 @property (nonatomic, readonly, copy)   NSString*   beerName;
 @property (nonatomic, readonly, copy)   NSString*   brewery;
-@property (nonatomic, readonly, copy)   NSNumber*   numBeers;
-@property (nonatomic, readonly, copy)   NSNumber*   isRated;
+@property (nonatomic, readonly, copy)   NSNumber*   userRating;
+@property (nonatomic, readonly, copy)   NSNumber*   predictedRating;
 
-+ (instancetype)browseBeersDisplayItemWithName:(NSString *)beerName brewery:(NSString *)brewery numBeers:(NSNumber *)numBeers isRated:(NSNumber *)isRated;
++ (instancetype)browseBeersDisplayItemWithName:(NSString *)beerName brewery:(NSString *)brewery userRating:(NSNumber *)userRating predictedRating:(NSNumber *)predictedRating;
 
 @end

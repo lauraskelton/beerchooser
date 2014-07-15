@@ -57,14 +57,7 @@
     
     return [validBeers arrayFromObjectsCollectedWithBlock:^id(Beer *aBeer) {
         
-        NSNumber *numBeers = aBeer.predictedRating;
-        NSNumber *isRated = @(NO);
-        if (aBeer.userRating != nil) {
-            numBeers = aBeer.userRating;
-            isRated = @(YES);
-        }
-        
-        return [BrowseBeer browseBeerWithName:aBeer.beerName brewery:aBeer.brewery numBeers:numBeers isRated:isRated];
+        return [BrowseBeer browseBeerWithName:aBeer.beerName brewery:aBeer.brewery userRating:aBeer.userRating predictedRating:aBeer.predictedRating];
     }];
 }
 

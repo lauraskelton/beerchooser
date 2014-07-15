@@ -12,9 +12,10 @@
 #import "BrowseBeersDisplayData.h"
 #import "BrowseBeersDisplaySection.h"
 #import "BrowseBeersDisplayItem.h"
+#import "BeerTableViewCell.h"
 
 
-static NSString* const BrowseEntryCellIdentifier = @"BrowseEntryCell";
+static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
 
 
 @interface BrowseViewController ()
@@ -35,6 +36,7 @@ static NSString* const BrowseEntryCellIdentifier = @"BrowseEntryCell";
     [super viewDidLoad];
     
     self.strongTableView = self.tableView;
+    [self.tableView registerNib:[UINib nibWithNibName:BrowseEntryCellIdentifier bundle:nil] forCellReuseIdentifier:BrowseEntryCellIdentifier];
     [self configureView];
 }
 
@@ -53,6 +55,10 @@ static NSString* const BrowseEntryCellIdentifier = @"BrowseEntryCell";
     [self.eventHandler updateView];
 }
 
+-(IBAction)refreshData:(id)sender
+{
+
+}
 
 - (void)configureView
 {
@@ -111,12 +117,11 @@ static NSString* const BrowseEntryCellIdentifier = @"BrowseEntryCell";
     BrowseBeersDisplaySection *section = self.data.sections[indexPath.section];
     BrowseBeersDisplayItem *item = section.items[indexPath.row];
     
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:BrowseEntryCellIdentifier forIndexPath:indexPath];
+    BeerTableViewCell *cell = (BeerTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:BrowseEntryCellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = item.beerName;
-    cell.detailTextLabel.text = item.brewery;
-    cell.imageView.image = [UIImage imageNamed:section.imageName];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.beerTitleLabel.text = item.beerName;
+    cell.breweryLabel.text = item.brewery;
+    [cell setPredictedRating:item.predictedRating userRating:item.userRating];
     
     return cell;
 }

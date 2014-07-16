@@ -14,6 +14,9 @@
 
 #import "BrowseConfig.h"
 
+#import "PageTypes.h"
+#import "PageType.h"
+
 @interface AppDependencies ()
 
 @property (nonatomic, retain) NSMutableArray *moduleArray;
@@ -51,12 +54,11 @@
     self.moduleArray = [@[] mutableCopy];
     self.viewControllersArray = [@[] mutableCopy];
     
+    PageTypes *pageTypes = [[PageTypes alloc] init];
     // Create Browse Module instance for each page
-    for (int i = firstPage; i <= lastPage; i++) {
-        // create this page and return view controller?
-        // will this retain all of the module elements that we need?
-        // maybe retain an array of BrowseConfig instances here to keep from losing them
-        BrowseConfig *browseConfig = [[BrowseConfig alloc] initWithCoreDataStore:dataStore andPageType:i];
+    for (NSDictionary *pageDictionary in pageTypes.pagesArray) {
+        PageType *pageType = [[PageType alloc] initWithDictionary:pageDictionary];
+        BrowseConfig *browseConfig = [[BrowseConfig alloc] initWithCoreDataStore:dataStore andPageType:pageType];
         [self.moduleArray addObject:browseConfig];
         [self.viewControllersArray addObject:browseConfig.viewController];
     }

@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PageTypeDef.h"
 
-@class CoreDataStore;
+@class CoreDataStore, PageType;
 
 @interface BrowseConfig : NSObject
 
 @property (nonatomic, retain) CoreDataStore *dataStore;
-@property (nonatomic, assign) PageType pageType;
+@property (nonatomic, retain) PageType *pageType;
 @property (nonatomic, retain) UIViewController *viewController;
 
-- (id)initWithCoreDataStore:(CoreDataStore *)dataStore andPageType:(PageType)pageType;
+- (id)initWithCoreDataStore:(CoreDataStore *)dataStore andPageType:(PageType *)pageType;
 
 @end

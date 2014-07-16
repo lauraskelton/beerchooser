@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Page_Title</key>
+		<string>Popular Beers</string>
+		<key>Tab_Title</key>
+		<string>Popular</string>
+		<key>Tab_Image</key>
+		<string>first</string>
+		<key>API_Link</key>
+		<string>iosmostpopular.php</string>
+		<key>Index_Name</key>
+		<string>popularIndex</string>
+	</dict>
+	<dict>
+		<key>Page_Title</key>
+		<string>Your Ratings</string>
+		<key>Tab_Title</key>
+		<string>Ratings</string>
+		<key>Tab_Image</key>
+		<string>first</string>
+		<key>API_Link</key>
+		<string>iosyourratings.php</string>
+		<key>Index_Name</key>
+		<string>ratingsIndex</string>
+	</dict>
+	<dict>
+		<key>Page_Title</key>
+		<string>Suggested Beers</string>
+		<key>Tab_Title</key>
+		<string>Suggested</string>
+		<key>Tab_Image</key>
+		<string>first</string>
+		<key>API_Link</key>
+		<string>iosbeerstodrink.php</string>
+		<key>Index_Name</key>
+		<string>toDrinkIndex</string>
+	</dict>
+	<dict>
+		<key>Page_Title</key>
+		<string>Favorite Beers</string>
+		<key>Tab_Title</key>
+		<string>Favorites</string>
+		<key>Tab_Image</key>
+		<string>first</string>
+		<key>API_Link</key>
+		<string>iosfavorites.php</string>
+		<key>Index_Name</key>
+		<string>favoritesIndex</string>
+	</dict>
+	<dict>
+		<key>Page_Title</key>
+		<string>Saved Beers</string>
+		<key>Tab_Title</key>
+		<string>Saved</string>
+		<key>Tab_Image</key>
+		<string>first</string>
+		<key>API_Link</key>
+		<string>ioswishlist.php</string>
+		<key>Index_Name</key>
+		<string>wishlistIndex</string>
+	</dict>
+</array>
+</plist>

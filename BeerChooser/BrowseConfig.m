@@ -18,7 +18,7 @@
 #import "BeerChooserAPINetwork.h"
 #import "BeerChooserAPIDataManager.h"
 
-#import "PageTypes.h"
+#import "PageType.h"
 
 @interface BrowseConfig ()
 
@@ -30,7 +30,7 @@
 @implementation BrowseConfig
 @synthesize dataStore = _dataStore, pageType = _pageType;
 
-- (id)initWithCoreDataStore:(CoreDataStore *)dataStore andPageType:(PageType)pageType
+- (id)initWithCoreDataStore:(CoreDataStore *)dataStore andPageType:(PageType *)pageType
 {
     if ((self = [super init]))
     {
@@ -47,8 +47,8 @@
 - (UIViewController *)browseViewController
 {
     UIViewController *navigationController = [self.browseWireframe createBrowseNavigationController];
-    navigationController.title = [PageTypes tabTitleForType:self.pageType];
-    navigationController.tabBarItem.image = [PageTypes tabImageForType:self.pageType];
+    navigationController.title = self.pageType.tabTitle;
+    navigationController.tabBarItem.image = [UIImage imageNamed:self.pageType.tabImageName];
     return navigationController;
 }
 
@@ -71,22 +71,22 @@
     
     browsePresenter.browseInteractor = browseInteractor;
     browsePresenter.browseWireframe = browseWireframe;
-    browsePresenter.sectionTitle = [PageTypes sectionTitleForType:self.pageType];
+    browsePresenter.sectionTitle = self.pageType.pageTitle;
     
     browseWireframe.browsePresenter = browsePresenter;
-    browseWireframe.pageTitle = [PageTypes pageTitleForType:self.pageType];
+    browseWireframe.pageTitle = self.pageType.pageTitle;
     self.browseWireframe = browseWireframe;
     
     browseDataManager.dataStore = self.dataStore;
-    browseDataManager.indexString = [PageTypes indexNameForType:self.pageType];
+    browseDataManager.indexString = self.pageType.indexKey;
     
     // Network Classes
     apiNetwork.apiDataManager = apiDataManager;
-    apiNetwork.apiLink = [PageTypes apiLinkForType:self.pageType];
+    apiNetwork.apiLink = self.pageType.apiLink;
     apiNetwork.apiNetworkDelegate = browseInteractor;
     
     apiDataManager.dataStore = self.dataStore;
-    apiDataManager.indexString = [PageTypes indexNameForType:self.pageType];
+    apiDataManager.indexString = self.pageType.indexKey;
     
 }
 

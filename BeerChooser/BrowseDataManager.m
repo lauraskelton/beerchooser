@@ -19,7 +19,7 @@
 - (void)browseBeersWithCompletionBlock:(void (^)(NSArray *browseBeers))completionBlock
 {
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@ != nil", self.indexString]];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@ > 0", self.indexString]];
     NSArray *sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey: self.indexString ascending: YES]];
     
     __weak typeof(self) welf = self;

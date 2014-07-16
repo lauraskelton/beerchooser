@@ -2,7 +2,7 @@
 //  ManagedBeer.m
 //  BeerChooser
 //
-//  Created by Laura Skelton on 7/10/14.
+//  Created by Laura Skelton on 7/16/14.
 //  Copyright (c) 2014 Laura Skelton. All rights reserved.
 //
 
@@ -11,15 +11,19 @@
 
 @implementation ManagedBeer
 
-@dynamic beerID;
 @dynamic beerDescription;
-@dynamic styleName;
-@dynamic brewery;
-@dynamic predictedRating;
-@dynamic userRating;
+@dynamic beerID;
 @dynamic beerName;
-@dynamic rateDate;
+@dynamic brewery;
 @dynamic imgURL;
+@dynamic predictedRating;
+@dynamic rateDate;
+@dynamic styleName;
 @dynamic toDrinkIndex;
+@dynamic userRating;
+@dynamic popularIndex;
+@dynamic ratingsIndex;
+@dynamic favoritesIndex;
+@dynamic wishlistIndex;
 
 @end

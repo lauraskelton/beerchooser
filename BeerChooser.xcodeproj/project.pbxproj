@@ -35,7 +35,6 @@
 		82764DC8196F2203004D26E7 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DC7196F2203004D26E7 /* AppDependencies.m */; };
 		82764DCE196F23EA004D26E7 /* NSArray+POBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DCD196F23EA004D26E7 /* NSArray+POBJ.m */; };
 		82764DD4196F24C3004D26E7 /* BrowseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DD3196F24C3004D26E7 /* BrowseDataManager.m */; };
-		82764DD7196F26B0004D26E7 /* ManagedBeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DD6196F26B0004D26E7 /* ManagedBeer.m */; };
 		82764DDB196F2785004D26E7 /* BrowseInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DDA196F2785004D26E7 /* BrowseInteractor.m */; };
 		82764DE5196F2AD0004D26E7 /* BrowsePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DE4196F2AD0004D26E7 /* BrowsePresenter.m */; };
 		82764DE8196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DE7196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m */; };
@@ -44,6 +43,9 @@
 		82764DF1196F2FDA004D26E7 /* BrowseBeersDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DF0196F2FDA004D26E7 /* BrowseBeersDisplayItem.m */; };
 		82764DF4196F324F004D26E7 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DF3196F324F004D26E7 /* BrowseViewController.m */; };
 		82764DF8196F37E2004D26E7 /* BrowseBeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DF7196F37E2004D26E7 /* BrowseBeer.m */; };
+		82863C7B1976CF54005E80B3 /* PageTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 82863C7A1976CF54005E80B3 /* PageTypes.m */; };
+		82863C7E1976D064005E80B3 /* PageType.m in Sources */ = {isa = PBXBuildFile; fileRef = 82863C7D1976D064005E80B3 /* PageType.m */; };
+		82863C8D1976E51D005E80B3 /* ManagedBeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82863C8C1976E51D005E80B3 /* ManagedBeer.m */; };
 		82BCCB43196B4E4400C6DE22 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82BCCB42196B4E4400C6DE22 /* README.md */; };
 		82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
 		82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
@@ -87,7 +89,7 @@
 		82C1A5CD19748CD900A964B4 /* small-beer-userselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5C619748CD900A964B4 /* small-beer-userselected@2x.png */; };
 		82C1A5CF19748CEB00A964B4 /* blankimg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A5CE19748CEB00A964B4 /* blankimg.gif */; };
 		82E9CC861975ADFB00D90598 /* BrowseConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E9CC851975ADFB00D90598 /* BrowseConfig.m */; };
-		82E9CC8A1975B05F00D90598 /* PageTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E9CC891975B05F00D90598 /* PageTypes.m */; };
+		82E9CC8D1976008D00D90598 /* PageTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82E9CC8C1976008D00D90598 /* PageTypes.plist */; };
 		EE356ECBBC83494F85439084 /* libPods-BeerChooser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5C890E4BA0425B9DD5EB3E /* libPods-BeerChooser.a */; };
 /* End PBXBuildFile section */
 
@@ -144,8 +146,6 @@
 		82764DCD196F23EA004D26E7 /* NSArray+POBJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+POBJ.m"; sourceTree = "<group>"; };
 		82764DD2196F24C3004D26E7 /* BrowseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseDataManager.h; sourceTree = "<group>"; };
 		82764DD3196F24C3004D26E7 /* BrowseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseDataManager.m; sourceTree = "<group>"; };
-		82764DD5196F26B0004D26E7 /* ManagedBeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedBeer.h; sourceTree = "<group>"; };
-		82764DD6196F26B0004D26E7 /* ManagedBeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedBeer.m; sourceTree = "<group>"; };
 		82764DD8196F2755004D26E7 /* BrowseInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseInteractorIO.h; sourceTree = "<group>"; };
 		82764DD9196F2785004D26E7 /* BrowseInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseInteractor.h; sourceTree = "<group>"; };
 		82764DDA196F2785004D26E7 /* BrowseInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseInteractor.m; sourceTree = "<group>"; };
@@ -165,6 +165,12 @@
 		82764DF5196F3260004D26E7 /* BrowseViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseViewInterface.h; sourceTree = "<group>"; };
 		82764DF6196F37E2004D26E7 /* BrowseBeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseBeer.h; sourceTree = "<group>"; };
 		82764DF7196F37E2004D26E7 /* BrowseBeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseBeer.m; sourceTree = "<group>"; };
+		82863C791976CF54005E80B3 /* PageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTypes.h; sourceTree = "<group>"; };
+		82863C7A1976CF54005E80B3 /* PageTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTypes.m; sourceTree = "<group>"; };
+		82863C7C1976D064005E80B3 /* PageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageType.h; sourceTree = "<group>"; };
+		82863C7D1976D064005E80B3 /* PageType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageType.m; sourceTree = "<group>"; };
+		82863C8B1976E51D005E80B3 /* ManagedBeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedBeer.h; sourceTree = "<group>"; };
+		82863C8C1976E51D005E80B3 /* ManagedBeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedBeer.m; sourceTree = "<group>"; };
 		82BCCB42196B4E4400C6DE22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82BCCB44196B511C00C6DE22 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		82C1A56019742D4500A964B4 /* BeerChooserAPINetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerChooserAPINetwork.h; sourceTree = "<group>"; };
@@ -214,9 +220,7 @@
 		82C1A5CE19748CEB00A964B4 /* blankimg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = blankimg.gif; sourceTree = "<group>"; };
 		82E9CC841975ADFB00D90598 /* BrowseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseConfig.h; sourceTree = "<group>"; };
 		82E9CC851975ADFB00D90598 /* BrowseConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseConfig.m; sourceTree = "<group>"; };
-		82E9CC881975B05F00D90598 /* PageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTypes.h; sourceTree = "<group>"; };
-		82E9CC891975B05F00D90598 /* PageTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTypes.m; sourceTree = "<group>"; };
-		82E9CC8B1975B39300D90598 /* PageTypeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageTypeDef.h; sourceTree = "<group>"; };
+		82E9CC8C1976008D00D90598 /* PageTypes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PageTypes.plist; sourceTree = "<group>"; };
 		8D52D4B4AC1E4782883707A0 /* Pods-BeerChooserTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerChooserTests.xcconfig"; path = "Pods/Pods-BeerChooserTests.xcconfig"; sourceTree = "<group>"; };
 		BE2F3A685C5542E8BCB7D8AE /* Pods-BeerChooser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerChooser.xcconfig"; path = "Pods/Pods-BeerChooser.xcconfig"; sourceTree = "<group>"; };
 		D6DB41D4B04F48CFAAFF9669 /* libPods-BeerChooserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeerChooserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -372,8 +376,8 @@
 		82764DBA196F1CF4004D26E7 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				82764DD5196F26B0004D26E7 /* ManagedBeer.h */,
-				82764DD6196F26B0004D26E7 /* ManagedBeer.m */,
+				82863C8B1976E51D005E80B3 /* ManagedBeer.h */,
+				82863C8C1976E51D005E80B3 /* ManagedBeer.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -669,9 +673,11 @@
 		82E9CC871975B05100D90598 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				82E9CC8B1975B39300D90598 /* PageTypeDef.h */,
-				82E9CC881975B05F00D90598 /* PageTypes.h */,
-				82E9CC891975B05F00D90598 /* PageTypes.m */,
+				82E9CC8C1976008D00D90598 /* PageTypes.plist */,
+				82863C791976CF54005E80B3 /* PageTypes.h */,
+				82863C7A1976CF54005E80B3 /* PageTypes.m */,
+				82863C7C1976D064005E80B3 /* PageType.h */,
+				82863C7D1976D064005E80B3 /* PageType.m */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -793,6 +799,7 @@
 				82C1A5BA19748CB700A964B4 /* small-beer-highlighted@2x.png in Resources */,
 				82C1A5B319748CB700A964B4 /* small-beer-1qselected.png in Resources */,
 				82072967196B46E6001C8A03 /* InfoPlist.strings in Resources */,
+				82E9CC8D1976008D00D90598 /* PageTypes.plist in Resources */,
 				82C1A5CF19748CEB00A964B4 /* blankimg.gif in Resources */,
 				82C1A5B419748CB700A964B4 /* small-beer-1qselected@2x.png in Resources */,
 				82C1A5A419748CA300A964B4 /* beer-hot@2x.png in Resources */,
@@ -891,7 +898,6 @@
 				82C1A57819747D9200A964B4 /* BeerRatingView.m in Sources */,
 				82764DB6196F1A29004D26E7 /* BeerChooser.xcdatamodeld in Sources */,
 				82C1A5831974864B00A964B4 /* BeerTableViewCell.m in Sources */,
-				82E9CC8A1975B05F00D90598 /* PageTypes.m in Sources */,
 				82764DE8196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m in Sources */,
 				82C1A56E19747AB000A964B4 /* RatingView.m in Sources */,
 				82764DE5196F2AD0004D26E7 /* BrowsePresenter.m in Sources */,
@@ -902,10 +908,12 @@
 				82764DF1196F2FDA004D26E7 /* BrowseBeersDisplayItem.m in Sources */,
 				82072976196B46E6001C8A03 /* FirstViewController.m in Sources */,
 				82C1A56219742D4500A964B4 /* BeerChooserAPINetwork.m in Sources */,
-				82764DD7196F26B0004D26E7 /* ManagedBeer.m in Sources */,
+				82863C8D1976E51D005E80B3 /* ManagedBeer.m in Sources */,
 				82764DC1196F1F6F004D26E7 /* Beer.m in Sources */,
 				82764DA4196EF603004D26E7 /* Configuration.m in Sources */,
 				82764DD4196F24C3004D26E7 /* BrowseDataManager.m in Sources */,
+				82863C7B1976CF54005E80B3 /* PageTypes.m in Sources */,
+				82863C7E1976D064005E80B3 /* PageType.m in Sources */,
 				82072969196B46E6001C8A03 /* main.m in Sources */,
 				82764DC5196F2158004D26E7 /* RootWireframe.m in Sources */,
 				82764DBD196F1D11004D26E7 /* CoreDataStore.m in Sources */,

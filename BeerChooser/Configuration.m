@@ -10,6 +10,7 @@
 
 static NSString * const BeerChooserDictKey = @"BeerChooserAPI";
 static NSString * const TestFlightDictKey = @"TestFlightAPI";
+static NSString * const UserAccountDictKey = @"UserAccountInfo";
 
 @interface Configuration ()
 @property (nonatomic, strong) NSDictionary *plist;
@@ -34,16 +35,24 @@ static NSString * const TestFlightDictKey = @"TestFlightAPI";
     return self;
 }
 
-- (NSString *)hackerschoolClientID {
+- (NSString *)beerChooserClientID {
     return self.plist[BeerChooserDictKey][@"ClientID"];
 }
 
-- (NSString *)hackerschoolClientSecret {
+- (NSString *)beerChooserClientSecret {
     return self.plist[BeerChooserDictKey][@"ClientSecret"];
 }
 
 - (NSString *)testFlightAppID {
     return self.plist[TestFlightDictKey][@"AppID"];
+}
+
+- (NSString *)userAccountName {
+    return self.plist[UserAccountDictKey][@"Username"];
+}
+
+- (NSString *)userAccountPassword {
+    return self.plist[UserAccountDictKey][@"Password"];
 }
 
 @end

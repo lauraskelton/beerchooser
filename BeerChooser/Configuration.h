@@ -13,5 +13,7 @@
 @property (nonatomic, readonly) NSString *beerChooserClientID;
 @property (nonatomic, readonly) NSString *beerChooserClientSecret;
 @property (nonatomic, readonly) NSString *testFlightAppID;
+@property (nonatomic, readonly) NSString *userAccountName;
+@property (nonatomic, readonly) NSString *userAccountPassword;
 
 @end

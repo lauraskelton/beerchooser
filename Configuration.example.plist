@@ -14,5 +14,12 @@
 		<key>ClientSecret</key>
 		<string>YOUR_CLIENT_SECRET_HERE</string>
 	</dict>
+	<key>UserAccountInfo</key>
+	<dict>
+		<key>Username</key>
+		<string>YOUR_USERNAME_HERE</string>
+		<key>Password</key>
+		<string>YOUR_PASSWORD_HERE</string>
+	</dict>
 </dict>
 </plist>

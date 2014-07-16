@@ -89,11 +89,6 @@ static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
     [self.tableView reloadData];
 }
 
--(void)printTitle
-{
-    NSLog(@"UI Title: %@", self.pageTitle);
-}
-
 
 #pragma mark - UITableViewDelegate and DataSource Methods
 

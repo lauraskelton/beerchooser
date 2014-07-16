@@ -26,8 +26,6 @@
 
 - (void)foundBeers:(NSArray *)beers
 {
-    [self.userInterface printTitle];
-    NSLog(@"Presenter Title: %@", self.sectionTitle);
     if ([beers count] == 0)
     {
         [self.userInterface showNoContentMessage];

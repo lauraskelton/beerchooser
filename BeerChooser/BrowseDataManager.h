@@ -16,6 +16,7 @@ typedef void(^BrowseDataManagerFetchEntriesBlock)(NSArray *entries);
 @interface BrowseDataManager : NSObject
 
 @property (nonatomic, strong) CoreDataStore *dataStore;
+@property (nonatomic, retain) NSString *indexString;
 
 - (void)browseBeersWithCompletionBlock:(void (^)(NSArray *browseBeers))completionBlock;
 

@@ -15,10 +15,8 @@
 
 @property (nonatomic, weak) id <BeerChooserAPINetworkDelegate> apiNetworkDelegate;
 @property (nonatomic, strong) BeerChooserAPIDataManager *apiDataManager;
+@property (nonatomic, retain) NSString *apiLink;
 
-+ (BeerChooserAPINetwork *)shared;
-
--(void)login;
 -(void)getBeersToDrink;
 
 @end

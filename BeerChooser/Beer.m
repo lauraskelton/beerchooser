@@ -10,7 +10,7 @@
 
 @implementation Beer
 
-+ (instancetype)beerWithName:(NSString*)beerName description:(NSString*)beerDescription brewery:(NSString *)brewery predictedRating:(NSNumber *)predictedRating userRating:(NSNumber *)userRating styleName:(NSString *)styleName id:(NSNumber *)beerID rateDate:(NSDate *)rateDate imgURL:(NSString *)imgURL toDrinkIndex:(NSNumber *)toDrinkIndex
++ (instancetype)beerWithName:(NSString*)beerName description:(NSString*)beerDescription brewery:(NSString *)brewery predictedRating:(NSNumber *)predictedRating userRating:(NSNumber *)userRating styleName:(NSString *)styleName id:(NSNumber *)beerID rateDate:(NSDate *)rateDate imgURL:(NSString *)imgURL index:(NSNumber *)index
 {
     Beer *aBeer = [[self alloc] init];
     
@@ -23,7 +23,7 @@
     aBeer.styleName = styleName;
     aBeer.rateDate = rateDate;
     aBeer.imgURL = imgURL;
-    aBeer.toDrinkIndex = toDrinkIndex;
+    aBeer.index = index;
     
     return aBeer;
 }

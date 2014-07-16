@@ -89,7 +89,6 @@
     return newBeer;
 }
 
-
 - (void)save
 {
     [self.managedObjectContext save:NULL];

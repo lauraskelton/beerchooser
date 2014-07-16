@@ -21,4 +21,6 @@
 
 @property (nonatomic, strong) UIViewController<BrowseViewInterface> *userInterface;
 
+@property (nonatomic, retain) NSString *sectionTitle;
+
 @end

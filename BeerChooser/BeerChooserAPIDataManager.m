@@ -27,7 +27,7 @@
     newBeer.userRating = aBeer.userRating;
     newBeer.rateDate = aBeer.rateDate;
     newBeer.imgURL = aBeer.imgURL;
-    newBeer.toDrinkIndex = aBeer.toDrinkIndex;
+    [newBeer setValue:aBeer.index forKey:self.indexString];
     
     [self.dataStore save];
 }

@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) id<BrowseModuleInterface>    eventHandler;
 
+@property (nonatomic, retain) NSString *pageTitle;
+
 -(IBAction)refreshData:(id)sender;
 
 @end

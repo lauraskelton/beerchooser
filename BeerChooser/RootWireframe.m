@@ -10,19 +10,19 @@
 
 @implementation RootWireframe
 
-- (void)showRootViewController:(UIViewController *)viewController
+- (void)showRootViewControllers:(NSArray *)viewControllers
                       inWindow:(UIWindow *)window
 {
-    UINavigationController *navigationController = [self navigationControllerFromWindow:window];
-    navigationController.viewControllers = @[viewController];
+    UITabBarController *tabBarController = [self tabBarControllerFromWindow:window];
+    tabBarController.viewControllers = viewControllers;
 }
 
 
-- (UINavigationController *)navigationControllerFromWindow:(UIWindow *)window
+- (UITabBarController *)tabBarControllerFromWindow:(UIWindow *)window
 {
-    UINavigationController *navigationController = (UINavigationController *)[window rootViewController];
+    UITabBarController *tabBarController = (UITabBarController *)[window rootViewController];
     
-    return navigationController;
+    return tabBarController;
 }
 
 @end

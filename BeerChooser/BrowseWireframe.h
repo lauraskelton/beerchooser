@@ -10,13 +10,13 @@
 
 @class BrowsePresenter;
 @class BrowseViewController;
-@class RootWireframe;
 
 @interface BrowseWireframe : NSObject
 
 @property (nonatomic, strong) BrowsePresenter *browsePresenter;
-@property (nonatomic, strong) RootWireframe *rootWireframe;
+@property (nonatomic, retain) NSString *pageTitle;
 
-- (void)presentBrowseInterfaceFromWindow:(UIWindow *)window;
+//- (void)presentBrowseInterfaceFromWindow:(UIWindow *)window;
+-(UIViewController *)createBrowseNavigationController;
 
 @end

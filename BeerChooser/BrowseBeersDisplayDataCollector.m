@@ -81,7 +81,7 @@
 
 - (BrowseBeersDisplaySection *)displaySectionForKey:(NSNumber *)sectionKey
 {
-    NSString *sectionTitle = [self sectionTitle];
+    NSString *sectionTitle = self.sectionTitle;
     NSString *imageName = [self sectionImageName];
     
     return [BrowseBeersDisplaySection browseBeersDisplaySectionWithName:sectionTitle
@@ -93,12 +93,6 @@
 - (NSString *)sectionImageName
 {
     return @"check";
-}
-
-
-- (NSString *)sectionTitle
-{
-    return @"Suggested Beers";
 }
 
 - (NSMutableDictionary *)sections

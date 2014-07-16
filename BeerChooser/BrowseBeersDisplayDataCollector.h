@@ -13,6 +13,8 @@
 
 @interface BrowseBeersDisplayDataCollector : NSObject
 
+@property (nonatomic, retain) NSString *sectionTitle;
+
 - (void)addBrowseBeers:(NSArray *)browseBeers;
 - (BrowseBeersDisplayData*)collectedDisplayData;
 

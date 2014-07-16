@@ -14,6 +14,7 @@
 @interface BeerChooserAPIDataManager : NSObject
 
 @property (nonatomic, strong) CoreDataStore *dataStore;
+@property (nonatomic, retain) NSString *indexString;
 
 - (void)addNewBeer:(Beer *)aBeer;
 

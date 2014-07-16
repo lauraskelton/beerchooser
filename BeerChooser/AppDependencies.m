@@ -12,17 +12,13 @@
 
 #import "CoreDataStore.h"
 
-#import "BrowseDataManager.h"
-#import "BrowseInteractor.h"
-#import "BrowsePresenter.h"
-#import "BrowseWireframe.h"
-
-#import "BeerChooserAPINetwork.h"
-#import "BeerChooserAPIDataManager.h"
+#import "BrowseConfig.h"
 
 @interface AppDependencies ()
 
-@property (nonatomic, strong) BrowseWireframe *browseWireframe;
+@property (nonatomic, retain) NSMutableArray *moduleArray;
+@property (nonatomic, retain) NSMutableArray *viewControllersArray;
+@property (nonatomic, retain) RootWireframe *rootWireframe;
 
 @end
 
@@ -42,7 +38,7 @@
 
 - (void)installRootViewControllerIntoWindow:(UIWindow *)window
 {
-    [self.browseWireframe presentBrowseInterfaceFromWindow:window];
+    [self.rootWireframe showRootViewControllers:self.viewControllersArray inWindow:window];
 }
 
 
@@ -50,36 +46,20 @@
 {
     // Root Level Classes
     CoreDataStore *dataStore = [[CoreDataStore alloc] init];
-    RootWireframe *rootWireframe = [[RootWireframe alloc] init];
+    self.rootWireframe = [[RootWireframe alloc] init];
     
-    // Browse Modules Classes
-    BrowseWireframe *browseWireframe = [[BrowseWireframe alloc] init];
-    BrowsePresenter *browsePresenter = [[BrowsePresenter alloc] init];
-    BrowseDataManager *browseDataManager = [[BrowseDataManager alloc] init];
-    BrowseInteractor *browseInteractor = [[BrowseInteractor alloc] initWithDataManager:browseDataManager];
+    self.moduleArray = [@[] mutableCopy];
+    self.viewControllersArray = [@[] mutableCopy];
     
-    // Network Classes
-    BeerChooserAPINetwork *apiNetwork = [BeerChooserAPINetwork shared];
-    BeerChooserAPIDataManager *apiDataManager = [[BeerChooserAPIDataManager alloc] init];
-    
-    // Browse Module Classes
-    browseInteractor.output = browsePresenter;
-    
-    browsePresenter.browseInteractor = browseInteractor;
-    browsePresenter.browseWireframe = browseWireframe;
-    
-    browseWireframe.browsePresenter = browsePresenter;
-    browseWireframe.rootWireframe = rootWireframe;
-    self.browseWireframe = browseWireframe;
-    
-    browseDataManager.dataStore = dataStore;
-    
-    // Network Classes
-    apiNetwork.apiDataManager = apiDataManager;
-
-    apiNetwork.apiNetworkDelegate = browseInteractor;
-    
-    apiDataManager.dataStore = dataStore;
+    // Create Browse Module instance for each page
+    for (int i = firstPage; i <= lastPage; i++) {
+        // create this page and return view controller?
+        // will this retain all of the module elements that we need?
+        // maybe retain an array of BrowseConfig instances here to keep from losing them
+        BrowseConfig *browseConfig = [[BrowseConfig alloc] initWithCoreDataStore:dataStore andPageType:i];
+        [self.moduleArray addObject:browseConfig];
+        [self.viewControllersArray addObject:browseConfig.viewController];
+    }
 
 }
 

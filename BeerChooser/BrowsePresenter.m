@@ -26,6 +26,8 @@
 
 - (void)foundBeers:(NSArray *)beers
 {
+    [self.userInterface printTitle];
+    NSLog(@"Presenter Title: %@", self.sectionTitle);
     if ([beers count] == 0)
     {
         [self.userInterface showNoContentMessage];
@@ -46,6 +48,7 @@
 - (BrowseBeersDisplayData *)browseBeersDisplayDataWithItems:(NSArray *)beers
 {
     BrowseBeersDisplayDataCollector *collector = [[BrowseBeersDisplayDataCollector alloc] init];
+    collector.sectionTitle = self.sectionTitle;
     [collector addBrowseBeers:beers];
     
     return [collector collectedDisplayData];

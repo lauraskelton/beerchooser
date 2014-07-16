@@ -10,7 +10,7 @@
 
 @interface RootWireframe : NSObject
 
-- (void)showRootViewController:(UIViewController *)viewController
-                      inWindow:(UIWindow *)window;
+- (void)showRootViewControllers:(NSArray *)viewControllers
+                       inWindow:(UIWindow *)window;
 
 @end

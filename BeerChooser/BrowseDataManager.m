@@ -19,9 +19,8 @@
 - (void)browseBeersWithCompletionBlock:(void (^)(NSArray *browseBeers))completionBlock
 {
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"toDrinkIndex != nil"];
-    //NSArray *sortDescriptors = @[];
-    NSArray *sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey: @"toDrinkIndex" ascending: YES]];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@ != nil", self.indexString]];
+    NSArray *sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey: self.indexString ascending: YES]];
     
     __weak typeof(self) welf = self;
     [self.dataStore
@@ -39,7 +38,7 @@
 - (NSArray *)beersFromDataStoreEntries:(NSArray *)entries
 {
     return [entries arrayFromObjectsCollectedWithBlock:^id(ManagedBeer *aBeer) {
-        return [Beer beerWithName:aBeer.beerName description:aBeer.beerDescription brewery:aBeer.brewery predictedRating:aBeer.predictedRating userRating:aBeer.userRating styleName:aBeer.styleName id:aBeer.beerID rateDate:aBeer.rateDate imgURL:aBeer.imgURL toDrinkIndex:aBeer.toDrinkIndex];
+        return [Beer beerWithName:aBeer.beerName description:aBeer.beerDescription brewery:aBeer.brewery predictedRating:aBeer.predictedRating userRating:aBeer.userRating styleName:aBeer.styleName id:aBeer.beerID rateDate:aBeer.rateDate imgURL:aBeer.imgURL index:[aBeer valueForKey:self.indexString]];
     }];
 }
 

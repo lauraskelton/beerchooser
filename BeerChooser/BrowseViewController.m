@@ -57,12 +57,13 @@ static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
 
 -(IBAction)refreshData:(id)sender
 {
+    [self.eventHandler updateView];
 
 }
 
 - (void)configureView
 {
-    self.navigationItem.title = @"BEERCHOOSER";
+    self.navigationItem.title = self.pageTitle;
     
 }
 
@@ -76,6 +77,7 @@ static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
 - (void)showBrowseBeersDisplayData:(BrowseBeersDisplayData *)data
 {
     self.view = self.strongTableView;
+    [self.refreshControl endRefreshing];
     
     self.data = data;
     [self reloadEntries];
@@ -85,6 +87,11 @@ static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
 - (void)reloadEntries
 {
     [self.tableView reloadData];
+}
+
+-(void)printTitle
+{
+    NSLog(@"UI Title: %@", self.pageTitle);
 }
 
 

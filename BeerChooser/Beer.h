@@ -19,8 +19,8 @@
 @property (nonatomic, copy) NSDate * rateDate;
 @property (nonatomic, copy) NSNumber * predictedRating;
 @property (nonatomic, copy) NSNumber * userRating;
-@property (nonatomic, copy) NSNumber * toDrinkIndex;
+@property (nonatomic, copy) NSNumber * index;
 
-+ (instancetype)beerWithName:(NSString*)beerName description:(NSString*)beerDescription brewery:(NSString *)brewery predictedRating:(NSNumber *)predictedRating userRating:(NSNumber *)userRating styleName:(NSString *)styleName id:(NSNumber *)beerID rateDate:(NSDate *)rateDate imgURL:(NSString *)imgURL toDrinkIndex:(NSNumber *)toDrinkIndex;
++ (instancetype)beerWithName:(NSString*)beerName description:(NSString*)beerDescription brewery:(NSString *)brewery predictedRating:(NSNumber *)predictedRating userRating:(NSNumber *)userRating styleName:(NSString *)styleName id:(NSNumber *)beerID rateDate:(NSDate *)rateDate imgURL:(NSString *)imgURL index:(NSNumber *)index;
 
 @end

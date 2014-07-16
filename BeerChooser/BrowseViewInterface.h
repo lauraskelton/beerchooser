@@ -18,4 +18,6 @@
 - (void)showBrowseBeersDisplayData:(BrowseBeersDisplayData *)data;
 - (void)reloadEntries;
 
+-(void)printTitle;
+
 @end

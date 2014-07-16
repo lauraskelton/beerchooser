@@ -16,6 +16,7 @@
 @interface BrowseInteractor()
 
 @property (nonatomic, strong)   BrowseDataManager *dataManager;
+@property (nonatomic, strong)   BeerChooserAPINetwork *apiNetwork;
 
 - (void)findDownloadedBrowseBeers;
 
@@ -24,11 +25,12 @@
 
 @implementation BrowseInteractor
 
-- (instancetype)initWithDataManager:(BrowseDataManager *)dataManager
+- (instancetype)initWithDataManager:(BrowseDataManager *)dataManager andAPINetwork:(BeerChooserAPINetwork *)apiNetwork
 {
     if ((self = [super init]))
     {
         _dataManager = dataManager;
+        _apiNetwork = apiNetwork;
     }
     
     return self;
@@ -38,7 +40,7 @@
 {
     // tell api network to download beers
     // Should this dependency be set up like others?
-    [[BeerChooserAPINetwork shared] getBeersToDrink];
+    [_apiNetwork getBeersToDrink];
 }
 
 - (void)findDownloadedBrowseBeers

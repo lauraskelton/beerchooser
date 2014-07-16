@@ -10,7 +10,6 @@
 
 #import "BrowsePresenter.h"
 #import "BrowseViewController.h"
-#import "RootWireframe.h"
 
 #import "BrowseBeersDisplayData.h"
 #import "BrowseBeersDisplaySection.h"
@@ -18,6 +17,7 @@
 
 
 static NSString *BrowseViewControllerIdentifier = @"BrowseViewController";
+static NSString *BrowseNavigationControllerIdentifier = @"BrowseNavigationController";
 
 @interface BrowseWireframe ()
 
@@ -27,15 +27,29 @@ static NSString *BrowseViewControllerIdentifier = @"BrowseViewController";
 
 @implementation BrowseWireframe
 
-- (void)presentBrowseInterfaceFromWindow:(UIWindow *)window
+-(UIViewController *)createBrowseNavigationController
+{
+    UINavigationController *navigationController = [self navigationControllerFromStoryboard];
+    navigationController.viewControllers = @[[self createBrowseViewController]];
+    return navigationController;
+}
+
+- (UIViewController *)createBrowseViewController
 {
     BrowseViewController *browseViewController = [self browseViewControllerFromStoryboard];
     browseViewController.eventHandler = self.browsePresenter;
+    browseViewController.pageTitle = self.pageTitle;
     self.browsePresenter.userInterface = browseViewController;
     self.browseViewController = browseViewController;
+    return browseViewController;
+}
+
+- (UINavigationController *)navigationControllerFromStoryboard
+{
+    UIStoryboard *storyboard = [self mainStoryboard];
+    UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:BrowseNavigationControllerIdentifier];
     
-    [self.rootWireframe showRootViewController:browseViewController
-                                      inWindow:window];
+    return navigationController;
 }
 
 - (BrowseViewController *)browseViewControllerFromStoryboard

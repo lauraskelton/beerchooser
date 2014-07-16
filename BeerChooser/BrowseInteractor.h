@@ -10,12 +10,12 @@
 #import "BrowseInteractorIO.h"
 #import "BeerChooserAPINetworkDelegateInterface.h"
 
-@class      BrowseDataManager;
+@class      BrowseDataManager, BeerChooserAPINetwork;
 
 @interface BrowseInteractor : NSObject <BrowseInteractorInput, BeerChooserAPINetworkDelegate>
 
 @property (nonatomic, weak)     id<BrowseInteractorOutput> output;
 
-- (instancetype)initWithDataManager:(BrowseDataManager *)dataManager;
+- (instancetype)initWithDataManager:(BrowseDataManager *)dataManager andAPINetwork:(BeerChooserAPINetwork *)apiNetwork;
 
 @end

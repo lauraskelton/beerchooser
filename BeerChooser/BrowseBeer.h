@@ -14,10 +14,12 @@
 @property (nonatomic, readonly, copy)   NSString*               brewery;
 @property (nonatomic, readonly, copy)   NSNumber*               userRating;
 @property (nonatomic, readonly, copy)   NSNumber*               predictedRating;
+@property (nonatomic, readonly, copy)   NSNumber*               beerID;
 
 + (instancetype)browseBeerWithName:(NSString *)beerName
                            brewery:(NSString *)brewery
                         userRating:(NSNumber *)userRating
-                   predictedRating:(NSNumber *)predictedRating;
+                   predictedRating:(NSNumber *)predictedRating
+                            beerID:(NSNumber *)beerID;
 
 @end

@@ -9,14 +9,23 @@
 #import "BrowseConfig.h"
 
 #import "CoreDataStore.h"
+#import "BaseAPINetwork.h"
 
 #import "BrowseDataManager.h"
 #import "BrowseInteractor.h"
 #import "BrowsePresenter.h"
 #import "BrowseWireframe.h"
 
-#import "BeerChooserAPINetwork.h"
-#import "BeerChooserAPIDataManager.h"
+#import "BrowseAPINetwork.h"
+#import "BrowseAPIDataManager.h"
+
+#import "BeerDetailDataManager.h"
+#import "BeerDetailInteractor.h"
+#import "BeerDetailPresenter.h"
+#import "BeerDetailWireframe.h"
+
+#import "BeerDetailAPINetwork.h"
+#import "BeerDetailAPIDataManager.h"
 
 #import "PageType.h"
 
@@ -28,13 +37,14 @@
 
 
 @implementation BrowseConfig
-@synthesize dataStore = _dataStore, pageType = _pageType;
+@synthesize dataStore = _dataStore, baseAPINetwork = _baseAPINetwork, pageType = _pageType;
 
-- (id)initWithCoreDataStore:(CoreDataStore *)dataStore andPageType:(PageType *)pageType
+- (id)initWithCoreDataStore:(CoreDataStore *)dataStore baseAPINetwork:(BaseAPINetwork *)baseAPINetwork andPageType:(PageType *)pageType
 {
     if ((self = [super init]))
     {
         self.dataStore = dataStore;
+        self.baseAPINetwork = baseAPINetwork;
         self.pageType = pageType;
         [self configureDependencies];
         self.viewController = [self browseViewController];
@@ -60,9 +70,21 @@
     BrowsePresenter *browsePresenter = [[BrowsePresenter alloc] init];
     BrowseDataManager *browseDataManager = [[BrowseDataManager alloc] init];
     
+    // Beer Detail Module Classes
+    BeerDetailWireframe *beerDetailWireframe = [[BeerDetailWireframe alloc] init];
+    BeerDetailPresenter *beerDetailPresenter = [[BeerDetailPresenter alloc] init];
+    BeerDetailDataManager *beerDetailDataManager = [[BeerDetailDataManager alloc] init];
+    
     // Network Classes
-    BeerChooserAPINetwork *apiNetwork = [[BeerChooserAPINetwork alloc] init];
-    BeerChooserAPIDataManager *apiDataManager = [[BeerChooserAPIDataManager alloc] init];
+    BrowseAPINetwork *apiNetwork = [[BrowseAPINetwork alloc] init];
+    apiNetwork.baseAPINetwork = self.baseAPINetwork;
+    BrowseAPIDataManager *apiDataManager = [[BrowseAPIDataManager alloc] init];
+    
+    BeerDetailAPINetwork *beerDetailAPINetwork = [[BeerDetailAPINetwork alloc] init];
+    beerDetailAPINetwork.baseAPINetwork = self.baseAPINetwork;
+    BeerDetailAPIDataManager *beerDetailAPIDataManager = [[BeerDetailAPIDataManager alloc] init];
+    
+    BeerDetailInteractor *beerDetailInteractor = [[BeerDetailInteractor alloc] initWithDataManager:beerDetailDataManager andAPINetwork:beerDetailAPINetwork];
     
     BrowseInteractor *browseInteractor = [[BrowseInteractor alloc] initWithDataManager:browseDataManager andAPINetwork:apiNetwork];
     
@@ -74,19 +96,34 @@
     browsePresenter.sectionTitle = self.pageType.pageTitle;
     
     browseWireframe.browsePresenter = browsePresenter;
-    browseWireframe.pageTitle = self.pageType.pageTitle;
+    browseWireframe.pageTitle = @"BEERCHOOSER";
+    browseWireframe.beerDetailWireframe = beerDetailWireframe;
     self.browseWireframe = browseWireframe;
     
     browseDataManager.dataStore = self.dataStore;
     browseDataManager.indexString = self.pageType.indexKey;
     
-    // Network Classes
+    // Browse Network Classes
     apiNetwork.apiDataManager = apiDataManager;
     apiNetwork.apiLink = self.pageType.apiLink;
     apiNetwork.apiNetworkDelegate = browseInteractor;
-    
     apiDataManager.dataStore = self.dataStore;
     apiDataManager.indexString = self.pageType.indexKey;
+    
+    // Beer Detail Module Classes
+    beerDetailPresenter.beerDetailInteractor = beerDetailInteractor;
+    
+    beerDetailWireframe.beerDetailPresenter = beerDetailPresenter;
+    
+    beerDetailPresenter.beerDetailWireframe = beerDetailWireframe;
+    beerDetailPresenter.beerDetailModuleDelegate = browsePresenter;
+    
+    beerDetailDataManager.dataStore = self.dataStore;
+    
+    // Beer Detail Network Classes
+    beerDetailAPINetwork.apiDataManager = beerDetailAPIDataManager;
+    beerDetailAPINetwork.apiNetworkDelegate = beerDetailInteractor;
+    beerDetailAPIDataManager.dataStore = self.dataStore;
     
 }
 

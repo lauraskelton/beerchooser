@@ -12,9 +12,11 @@
 #import "BrowseInteractorIO.h"
 #import "BrowseWireframe.h"
 
+#import "BeerDetailModuleDelegateInterface.h"
+
 @protocol BrowseViewInterface;
 
-@interface BrowsePresenter : NSObject <BrowseInteractorOutput, BrowseModuleInterface>
+@interface BrowsePresenter : NSObject <BrowseInteractorOutput, BrowseModuleInterface, BeerDetailModuleDelegate>
 
 @property (nonatomic, strong) id<BrowseInteractorInput>    browseInteractor;
 @property (nonatomic, strong) BrowseWireframe*             browseWireframe;

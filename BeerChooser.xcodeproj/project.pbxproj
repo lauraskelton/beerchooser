@@ -46,11 +46,23 @@
 		82863C7B1976CF54005E80B3 /* PageTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 82863C7A1976CF54005E80B3 /* PageTypes.m */; };
 		82863C7E1976D064005E80B3 /* PageType.m in Sources */ = {isa = PBXBuildFile; fileRef = 82863C7D1976D064005E80B3 /* PageType.m */; };
 		82863C8D1976E51D005E80B3 /* ManagedBeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82863C8C1976E51D005E80B3 /* ManagedBeer.m */; };
+		82AA649F19782EB600526F25 /* BeerDetailInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 82AA649E19782EB600526F25 /* BeerDetailInteractor.m */; };
 		82BCCB43196B4E4400C6DE22 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 82BCCB42196B4E4400C6DE22 /* README.md */; };
 		82BCCB45196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
 		82BCCB46196B511C00C6DE22 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BCCB44196B511C00C6DE22 /* .travis.yml */; };
-		82C1A56219742D4500A964B4 /* BeerChooserAPINetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A56119742D4500A964B4 /* BeerChooserAPINetwork.m */; };
-		82C1A5651974597700A964B4 /* BeerChooserAPIDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A5641974597700A964B4 /* BeerChooserAPIDataManager.m */; };
+		82BD891D197735590066C63B /* BeerDetailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD891B197735590066C63B /* BeerDetailHeaderCell.m */; };
+		82BD891E197735590066C63B /* BeerDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BD891C197735590066C63B /* BeerDetailHeaderCell.xib */; };
+		82BD8923197737920066C63B /* BeerDetailRatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD8921197737920066C63B /* BeerDetailRatingCell.m */; };
+		82BD8924197737920066C63B /* BeerDetailRatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82BD8922197737920066C63B /* BeerDetailRatingCell.xib */; };
+		82BD8930197738860066C63B /* BeerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD892F197738860066C63B /* BeerDetailViewController.m */; };
+		82BD8934197738B40066C63B /* BeerDetailWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD8933197738B40066C63B /* BeerDetailWireframe.m */; };
+		82BD8937197738CB0066C63B /* BeerDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD8936197738CB0066C63B /* BeerDetailPresenter.m */; };
+		82BD8945197739E20066C63B /* BeerDetailDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD8944197739E20066C63B /* BeerDetailDataManager.m */; };
+		82BD894919773A1E0066C63B /* BaseAPINetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD894819773A1E0066C63B /* BaseAPINetwork.m */; };
+		82BD894C197743B30066C63B /* BeerDetailAPINetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD894B197743B30066C63B /* BeerDetailAPINetwork.m */; };
+		82BD8952197743DC0066C63B /* BeerDetailAPIDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BD8951197743DC0066C63B /* BeerDetailAPIDataManager.m */; };
+		82C1A56219742D4500A964B4 /* BrowseAPINetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A56119742D4500A964B4 /* BrowseAPINetwork.m */; };
+		82C1A5651974597700A964B4 /* BrowseAPIDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A5641974597700A964B4 /* BrowseAPIDataManager.m */; };
 		82C1A56E19747AB000A964B4 /* RatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A56D19747AB000A964B4 /* RatingView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		82C1A57819747D9200A964B4 /* BeerRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A57719747D9200A964B4 /* BeerRatingView.m */; };
 		82C1A5831974864B00A964B4 /* BeerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A5811974864B00A964B4 /* BeerTableViewCell.m */; };
@@ -171,13 +183,40 @@
 		82863C7D1976D064005E80B3 /* PageType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageType.m; sourceTree = "<group>"; };
 		82863C8B1976E51D005E80B3 /* ManagedBeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedBeer.h; sourceTree = "<group>"; };
 		82863C8C1976E51D005E80B3 /* ManagedBeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedBeer.m; sourceTree = "<group>"; };
+		82AA649A19782DFB00526F25 /* BeerDetailModuleDelegateInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailModuleDelegateInterface.h; sourceTree = "<group>"; };
+		82AA649D19782EB600526F25 /* BeerDetailInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailInteractor.h; sourceTree = "<group>"; };
+		82AA649E19782EB600526F25 /* BeerDetailInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailInteractor.m; sourceTree = "<group>"; };
+		82AA64A019785C9500526F25 /* BeerDetailInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerDetailInteractorIO.h; sourceTree = "<group>"; };
 		82BCCB42196B4E4400C6DE22 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82BCCB44196B511C00C6DE22 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		82C1A56019742D4500A964B4 /* BeerChooserAPINetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerChooserAPINetwork.h; sourceTree = "<group>"; };
-		82C1A56119742D4500A964B4 /* BeerChooserAPINetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerChooserAPINetwork.m; sourceTree = "<group>"; };
-		82C1A5631974597700A964B4 /* BeerChooserAPIDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerChooserAPIDataManager.h; sourceTree = "<group>"; };
-		82C1A5641974597700A964B4 /* BeerChooserAPIDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerChooserAPIDataManager.m; sourceTree = "<group>"; };
-		82C1A569197461B600A964B4 /* BeerChooserAPINetworkDelegateInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerChooserAPINetworkDelegateInterface.h; sourceTree = "<group>"; };
+		82BD891A197735590066C63B /* BeerDetailHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailHeaderCell.h; sourceTree = "<group>"; };
+		82BD891B197735590066C63B /* BeerDetailHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailHeaderCell.m; sourceTree = "<group>"; };
+		82BD891C197735590066C63B /* BeerDetailHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeerDetailHeaderCell.xib; sourceTree = "<group>"; };
+		82BD8920197737920066C63B /* BeerDetailRatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailRatingCell.h; sourceTree = "<group>"; };
+		82BD8921197737920066C63B /* BeerDetailRatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailRatingCell.m; sourceTree = "<group>"; };
+		82BD8922197737920066C63B /* BeerDetailRatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeerDetailRatingCell.xib; sourceTree = "<group>"; };
+		82BD892E197738860066C63B /* BeerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailViewController.h; sourceTree = "<group>"; };
+		82BD892F197738860066C63B /* BeerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailViewController.m; sourceTree = "<group>"; };
+		82BD8931197738960066C63B /* BeerDetailViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerDetailViewInterface.h; sourceTree = "<group>"; };
+		82BD8932197738B40066C63B /* BeerDetailWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailWireframe.h; sourceTree = "<group>"; };
+		82BD8933197738B40066C63B /* BeerDetailWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailWireframe.m; sourceTree = "<group>"; };
+		82BD8935197738CB0066C63B /* BeerDetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailPresenter.h; sourceTree = "<group>"; };
+		82BD8936197738CB0066C63B /* BeerDetailPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailPresenter.m; sourceTree = "<group>"; };
+		82BD8938197738EC0066C63B /* BeerDetailModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerDetailModuleInterface.h; sourceTree = "<group>"; };
+		82BD8943197739E20066C63B /* BeerDetailDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailDataManager.h; sourceTree = "<group>"; };
+		82BD8944197739E20066C63B /* BeerDetailDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailDataManager.m; sourceTree = "<group>"; };
+		82BD894719773A1E0066C63B /* BaseAPINetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPINetwork.h; sourceTree = "<group>"; };
+		82BD894819773A1E0066C63B /* BaseAPINetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPINetwork.m; sourceTree = "<group>"; };
+		82BD894A197743B30066C63B /* BeerDetailAPINetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailAPINetwork.h; sourceTree = "<group>"; };
+		82BD894B197743B30066C63B /* BeerDetailAPINetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailAPINetwork.m; sourceTree = "<group>"; };
+		82BD8950197743DC0066C63B /* BeerDetailAPIDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerDetailAPIDataManager.h; sourceTree = "<group>"; };
+		82BD8951197743DC0066C63B /* BeerDetailAPIDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerDetailAPIDataManager.m; sourceTree = "<group>"; };
+		82BD8953197743EC0066C63B /* BeerDetailAPINetworkDelegateInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerDetailAPINetworkDelegateInterface.h; sourceTree = "<group>"; };
+		82C1A56019742D4500A964B4 /* BrowseAPINetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseAPINetwork.h; sourceTree = "<group>"; };
+		82C1A56119742D4500A964B4 /* BrowseAPINetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseAPINetwork.m; sourceTree = "<group>"; };
+		82C1A5631974597700A964B4 /* BrowseAPIDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseAPIDataManager.h; sourceTree = "<group>"; };
+		82C1A5641974597700A964B4 /* BrowseAPIDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseAPIDataManager.m; sourceTree = "<group>"; };
+		82C1A569197461B600A964B4 /* BrowseAPINetworkDelegateInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseAPINetworkDelegateInterface.h; sourceTree = "<group>"; };
 		82C1A56C19747AB000A964B4 /* RatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingView.h; sourceTree = "<group>"; };
 		82C1A56D19747AB000A964B4 /* RatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingView.m; sourceTree = "<group>"; };
 		82C1A57619747D9200A964B4 /* BeerRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerRatingView.h; sourceTree = "<group>"; };
@@ -357,6 +396,7 @@
 				82764D9E196EF5D0004D26E7 /* Configuration */,
 				82764DBE196F1F60004D26E7 /* Data Model */,
 				82764DB3196F19F8004D26E7 /* Data Store */,
+				82BD8946197739F20066C63B /* Network API */,
 				82764DC2196F2141004D26E7 /* View */,
 			);
 			name = Common;
@@ -403,6 +443,7 @@
 		82764DC9196F233B004D26E7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				82BD8925197737BC0066C63B /* Beer Details */,
 				82764DCA196F2345004D26E7 /* Browse List */,
 			);
 			name = Modules;
@@ -422,6 +463,7 @@
 		82764DCB196F23C4004D26E7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				82C1A56F19747C9600A964B4 /* RatingView */,
 				82764DCC196F23EA004D26E7 /* NSArray+POBJ.h */,
 				82764DCD196F23EA004D26E7 /* NSArray+POBJ.m */,
 			);
@@ -518,7 +560,6 @@
 			isa = PBXGroup;
 			children = (
 				82863C8F1976E79C005E80B3 /* TableViewCells */,
-				82C1A56F19747C9600A964B4 /* RatingView */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -526,9 +567,7 @@
 		82863C8F1976E79C005E80B3 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				82C1A5801974864B00A964B4 /* BeerTableViewCell.h */,
-				82C1A5811974864B00A964B4 /* BeerTableViewCell.m */,
-				82C1A5821974864B00A964B4 /* BeerTableViewCell.xib */,
+				82BD8918197735080066C63B /* BeerTableViewCell */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -566,6 +605,185 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		82BD8918197735080066C63B /* BeerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				82C1A5801974864B00A964B4 /* BeerTableViewCell.h */,
+				82C1A5811974864B00A964B4 /* BeerTableViewCell.m */,
+				82C1A5821974864B00A964B4 /* BeerTableViewCell.xib */,
+			);
+			name = BeerTableViewCell;
+			sourceTree = "<group>";
+		};
+		82BD8919197735270066C63B /* BeerDetailHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				82BD891A197735590066C63B /* BeerDetailHeaderCell.h */,
+				82BD891B197735590066C63B /* BeerDetailHeaderCell.m */,
+				82BD891C197735590066C63B /* BeerDetailHeaderCell.xib */,
+			);
+			name = BeerDetailHeaderCell;
+			sourceTree = "<group>";
+		};
+		82BD891F1977376E0066C63B /* BeerDetailRatingCell */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8920197737920066C63B /* BeerDetailRatingCell.h */,
+				82BD8921197737920066C63B /* BeerDetailRatingCell.m */,
+				82BD8922197737920066C63B /* BeerDetailRatingCell.xib */,
+			);
+			name = BeerDetailRatingCell;
+			sourceTree = "<group>";
+		};
+		82BD8925197737BC0066C63B /* Beer Details */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8926197737F20066C63B /* Application Logic */,
+				82BD8927197737F90066C63B /* Module Interface */,
+				82BD8928197738000066C63B /* User Interface */,
+			);
+			name = "Beer Details";
+			sourceTree = "<group>";
+		};
+		82BD8926197737F20066C63B /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8939197739640066C63B /* Interactor */,
+				82BD893A197739690066C63B /* Manager */,
+				82BD893B1977396E0066C63B /* API */,
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		82BD8927197737F90066C63B /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				82AA649A19782DFB00526F25 /* BeerDetailModuleDelegateInterface.h */,
+				82BD8938197738EC0066C63B /* BeerDetailModuleInterface.h */,
+			);
+			name = "Module Interface";
+			sourceTree = "<group>";
+		};
+		82BD8928197738000066C63B /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				82BD89291977380F0066C63B /* Presenter */,
+				82BD892A197738140066C63B /* View */,
+				82BD892B197738180066C63B /* Wireframe */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		82BD89291977380F0066C63B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8935197738CB0066C63B /* BeerDetailPresenter.h */,
+				82BD8936197738CB0066C63B /* BeerDetailPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		82BD892A197738140066C63B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82BD892C197738260066C63B /* Custom Views */,
+				82BD892E197738860066C63B /* BeerDetailViewController.h */,
+				82BD892F197738860066C63B /* BeerDetailViewController.m */,
+				82BD8931197738960066C63B /* BeerDetailViewInterface.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82BD892B197738180066C63B /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8932197738B40066C63B /* BeerDetailWireframe.h */,
+				82BD8933197738B40066C63B /* BeerDetailWireframe.m */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		82BD892C197738260066C63B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				82BD892D1977382C0066C63B /* TableViewCells */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		82BD892D1977382C0066C63B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8919197735270066C63B /* BeerDetailHeaderCell */,
+				82BD891F1977376E0066C63B /* BeerDetailRatingCell */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		82BD8939197739640066C63B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				82AA64A019785C9500526F25 /* BeerDetailInteractorIO.h */,
+				82AA649D19782EB600526F25 /* BeerDetailInteractor.h */,
+				82AA649E19782EB600526F25 /* BeerDetailInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		82BD893A197739690066C63B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8943197739E20066C63B /* BeerDetailDataManager.h */,
+				82BD8944197739E20066C63B /* BeerDetailDataManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		82BD893B1977396E0066C63B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				82BD894D197743B80066C63B /* Interface */,
+				82BD894E197743BC0066C63B /* Manager */,
+				82BD894F197743C20066C63B /* Network */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		82BD8946197739F20066C63B /* Network API */ = {
+			isa = PBXGroup;
+			children = (
+				82BD894719773A1E0066C63B /* BaseAPINetwork.h */,
+				82BD894819773A1E0066C63B /* BaseAPINetwork.m */,
+			);
+			name = "Network API";
+			sourceTree = "<group>";
+		};
+		82BD894D197743B80066C63B /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8953197743EC0066C63B /* BeerDetailAPINetworkDelegateInterface.h */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		82BD894E197743BC0066C63B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				82BD8950197743DC0066C63B /* BeerDetailAPIDataManager.h */,
+				82BD8951197743DC0066C63B /* BeerDetailAPIDataManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		82BD894F197743C20066C63B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				82BD894A197743B30066C63B /* BeerDetailAPINetwork.h */,
+				82BD894B197743B30066C63B /* BeerDetailAPINetwork.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		82C1A55C19742A2400A964B4 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,8 +797,8 @@
 		82C1A5661974598900A964B4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				82C1A56019742D4500A964B4 /* BeerChooserAPINetwork.h */,
-				82C1A56119742D4500A964B4 /* BeerChooserAPINetwork.m */,
+				82C1A56019742D4500A964B4 /* BrowseAPINetwork.h */,
+				82C1A56119742D4500A964B4 /* BrowseAPINetwork.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -588,8 +806,8 @@
 		82C1A5671974599000A964B4 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				82C1A5631974597700A964B4 /* BeerChooserAPIDataManager.h */,
-				82C1A5641974597700A964B4 /* BeerChooserAPIDataManager.m */,
+				82C1A5631974597700A964B4 /* BrowseAPIDataManager.h */,
+				82C1A5641974597700A964B4 /* BrowseAPIDataManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -597,7 +815,7 @@
 		82C1A568197461A400A964B4 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				82C1A569197461B600A964B4 /* BeerChooserAPINetworkDelegateInterface.h */,
+				82C1A569197461B600A964B4 /* BrowseAPINetworkDelegateInterface.h */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -796,6 +1014,7 @@
 				82C1A5B919748CB700A964B4 /* small-beer-highlighted.png in Resources */,
 				82764DB0196F1954004D26E7 /* Configuration.example.plist in Resources */,
 				82C1A5A719748CA300A964B4 /* beer-selected.png in Resources */,
+				82BD891E197735590066C63B /* BeerDetailHeaderCell.xib in Resources */,
 				82C1A5A219748CA300A964B4 /* beer-highlighted.png in Resources */,
 				82C1A5BB19748CB700A964B4 /* small-beer-hot.png in Resources */,
 				82C1A5BE19748CC900A964B4 /* beer-hot.png in Resources */,
@@ -808,6 +1027,7 @@
 				82C1A5B319748CB700A964B4 /* small-beer-1qselected.png in Resources */,
 				82072967196B46E6001C8A03 /* InfoPlist.strings in Resources */,
 				82E9CC8D1976008D00D90598 /* PageTypes.plist in Resources */,
+				82BD8924197737920066C63B /* BeerDetailRatingCell.xib in Resources */,
 				82C1A5CF19748CEB00A964B4 /* blankimg.gif in Resources */,
 				82C1A5B419748CB700A964B4 /* small-beer-1qselected@2x.png in Resources */,
 				82C1A5A419748CA300A964B4 /* beer-hot@2x.png in Resources */,
@@ -903,24 +1123,34 @@
 				82283720196F55B000BF03C6 /* BrowseWireframe.m in Sources */,
 				82BCCB43196B4E4400C6DE22 /* README.md in Sources */,
 				82764DEE196F2F59004D26E7 /* BrowseBeersDisplaySection.m in Sources */,
+				82BD8923197737920066C63B /* BeerDetailRatingCell.m in Sources */,
 				82C1A57819747D9200A964B4 /* BeerRatingView.m in Sources */,
+				82BD8945197739E20066C63B /* BeerDetailDataManager.m in Sources */,
 				82764DB6196F1A29004D26E7 /* BeerChooser.xcdatamodeld in Sources */,
+				82BD891D197735590066C63B /* BeerDetailHeaderCell.m in Sources */,
 				82C1A5831974864B00A964B4 /* BeerTableViewCell.m in Sources */,
 				82764DE8196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m in Sources */,
 				82C1A56E19747AB000A964B4 /* RatingView.m in Sources */,
 				82764DE5196F2AD0004D26E7 /* BrowsePresenter.m in Sources */,
 				82764DF4196F324F004D26E7 /* BrowseViewController.m in Sources */,
 				82764DCE196F23EA004D26E7 /* NSArray+POBJ.m in Sources */,
-				82C1A5651974597700A964B4 /* BeerChooserAPIDataManager.m in Sources */,
+				82C1A5651974597700A964B4 /* BrowseAPIDataManager.m in Sources */,
 				82E9CC861975ADFB00D90598 /* BrowseConfig.m in Sources */,
 				82764DF1196F2FDA004D26E7 /* BrowseBeersDisplayItem.m in Sources */,
 				82072976196B46E6001C8A03 /* FirstViewController.m in Sources */,
-				82C1A56219742D4500A964B4 /* BeerChooserAPINetwork.m in Sources */,
+				82C1A56219742D4500A964B4 /* BrowseAPINetwork.m in Sources */,
 				82863C8D1976E51D005E80B3 /* ManagedBeer.m in Sources */,
 				82764DC1196F1F6F004D26E7 /* Beer.m in Sources */,
+				82AA649F19782EB600526F25 /* BeerDetailInteractor.m in Sources */,
+				82BD894C197743B30066C63B /* BeerDetailAPINetwork.m in Sources */,
+				82BD8952197743DC0066C63B /* BeerDetailAPIDataManager.m in Sources */,
 				82764DA4196EF603004D26E7 /* Configuration.m in Sources */,
+				82BD8934197738B40066C63B /* BeerDetailWireframe.m in Sources */,
 				82764DD4196F24C3004D26E7 /* BrowseDataManager.m in Sources */,
+				82BD8937197738CB0066C63B /* BeerDetailPresenter.m in Sources */,
 				82863C7B1976CF54005E80B3 /* PageTypes.m in Sources */,
+				82BD894919773A1E0066C63B /* BaseAPINetwork.m in Sources */,
+				82BD8930197738860066C63B /* BeerDetailViewController.m in Sources */,
 				82863C7E1976D064005E80B3 /* PageType.m in Sources */,
 				82072969196B46E6001C8A03 /* main.m in Sources */,
 				82764DC5196F2158004D26E7 /* RootWireframe.m in Sources */,

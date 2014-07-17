@@ -15,6 +15,7 @@
 @property (nonatomic, copy)   NSString*               brewery;
 @property (nonatomic, copy)   NSNumber*               userRating;
 @property (nonatomic, copy)   NSNumber*               predictedRating;
+@property (nonatomic, copy)   NSNumber*               beerID;
 
 @end
 
@@ -25,6 +26,7 @@
                            brewery:(NSString *)brewery
                         userRating:(NSNumber *)userRating
                    predictedRating:(NSNumber *)predictedRating
+                            beerID:(NSNumber *)beerID
 {
     BrowseBeer *browseBeer = [[BrowseBeer alloc] init];
     
@@ -32,6 +34,7 @@
     browseBeer.brewery = brewery;
     browseBeer.userRating = userRating;
     browseBeer.predictedRating = predictedRating;
+    browseBeer.beerID = beerID;
     
     return browseBeer;
 }
@@ -52,8 +55,9 @@
     
     BOOL hasEqualNames = (!self.beerName && !browseBeer.beerName) || [self.beerName isEqualToString:browseBeer.beerName];
     BOOL hasEqualBreweries = (!self.brewery && !browseBeer.brewery) || [self.brewery isEqualToString:browseBeer.brewery];
+    BOOL hasEqualBeerIDs = (!self.beerID && !browseBeer.beerID) || [self.beerID integerValue ]==[browseBeer.beerID integerValue];
     
-    return hasEqualNames && hasEqualBreweries;
+    return hasEqualNames && hasEqualBreweries && hasEqualBeerIDs;
 }
 
 

@@ -12,6 +12,12 @@
 	
 }
 
+@property (nonatomic, assign) BOOL isSmall;
+@property (nonatomic, retain) NSNumber *beerPredictedRating;
+@property (nonatomic, retain) NSNumber *beerUserRating;
+
 -(void)ratingViewIsSmall:(BOOL)viewIsSmall predictedRating:(NSNumber *)beerPredictedRating userRating:(NSNumber *)beerUserRating;
+
+-(void)setBeerPredictedRating:(NSNumber *)newBeerPredictedRating andBeerUserRating:(NSNumber *)newBeerUserRating;
 
 @end

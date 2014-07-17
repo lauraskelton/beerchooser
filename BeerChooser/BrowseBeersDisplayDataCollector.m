@@ -40,7 +40,7 @@
 
 - (BrowseBeersDisplayItem *)displayItemForBrowseBeer:(BrowseBeer *)browseBeer
 {
-    return [BrowseBeersDisplayItem browseBeersDisplayItemWithName:browseBeer.beerName brewery:browseBeer.brewery userRating:browseBeer.userRating predictedRating:browseBeer.predictedRating];
+    return [BrowseBeersDisplayItem browseBeersDisplayItemWithName:browseBeer.beerName brewery:browseBeer.brewery userRating:browseBeer.userRating predictedRating:browseBeer.predictedRating beerID:browseBeer.beerID];
 }
 
 - (void)addDisplayItem:(BrowseBeersDisplayItem *)displayItem

@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@class CoreDataStore, PageType;
+@class CoreDataStore, PageType, BaseAPINetwork;
 
 @interface BrowseConfig : NSObject
 
 @property (nonatomic, retain) CoreDataStore *dataStore;
+@property (nonatomic, retain) BaseAPINetwork *baseAPINetwork;
 @property (nonatomic, retain) PageType *pageType;
 @property (nonatomic, retain) UIViewController *viewController;
 
-- (id)initWithCoreDataStore:(CoreDataStore *)dataStore andPageType:(PageType *)pageType;
+- (id)initWithCoreDataStore:(CoreDataStore *)dataStore baseAPINetwork:(BaseAPINetwork *)baseAPINetwork andPageType:(PageType *)pageType;
 
 @end

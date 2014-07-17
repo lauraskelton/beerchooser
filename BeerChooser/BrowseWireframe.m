@@ -11,6 +11,8 @@
 #import "BrowsePresenter.h"
 #import "BrowseViewController.h"
 
+#import "BeerDetailWireframe.h"
+
 #import "BrowseBeersDisplayData.h"
 #import "BrowseBeersDisplaySection.h"
 #import "BrowseBeersDisplayItem.h"
@@ -22,15 +24,22 @@ static NSString *BrowseNavigationControllerIdentifier = @"BrowseNavigationContro
 @interface BrowseWireframe ()
 
 @property (nonatomic, strong) BrowseViewController *browseViewController;
+@property (nonatomic, strong) UINavigationController *navigationController;
 
 @end
 
 @implementation BrowseWireframe
 
+- (void)presentBeerDetailInterfaceWithDisplayItem:(BrowseBeersDisplayItem *)displayItem
+{
+    [self.beerDetailWireframe presentBeerDetailInterfaceFromNavigationController:self.navigationController withDisplayItem:displayItem];
+}
+
 -(UIViewController *)createBrowseNavigationController
 {
     UINavigationController *navigationController = [self navigationControllerFromStoryboard];
     navigationController.viewControllers = @[[self createBrowseViewController]];
+    self.navigationController = navigationController;
     return navigationController;
 }
 

@@ -10,6 +10,8 @@
 
 @interface BeerRatingView (/* Private methods */)
 
+-(void)configureRatings;
+-(void)configureViewScale;
 - (void)setSmallBeerImages;
 - (void)setLargeBeerImages;
 
@@ -19,24 +21,45 @@
 
 -(void)ratingViewIsSmall:(BOOL)viewIsSmall predictedRating:(NSNumber *)beerPredictedRating userRating:(NSNumber *)beerUserRating
 {
-    if (viewIsSmall) {
+    self.isSmall = viewIsSmall;
+    self.beerPredictedRating = beerPredictedRating;
+    self.beerUserRating = beerUserRating;
+    
+    [self configureViewScale];
+    [self configureRatings];
+    
+}
+
+-(void)setBeerPredictedRating:(NSNumber *)newBeerPredictedRating andBeerUserRating:(NSNumber *)newBeerUserRating
+{
+    self.beerPredictedRating = newBeerPredictedRating;
+    self.beerUserRating = newBeerUserRating;
+    [self configureRatings];
+}
+
+-(void)configureViewScale
+{
+    if (self.isSmall) {
         [self setSmallBeerImages];
     } else {
         [self setLargeBeerImages];
     }
-    
+}
+
+-(void)configureRatings
+{
     // configure user and predicted rating numbers
-    if (([beerUserRating integerValue]>=1) && ([beerUserRating integerValue]<=5)) {
-        self.rating = [beerPredictedRating integerValue];
-        [self initialSetUserRating:[beerUserRating integerValue]];
+    if (([self.beerUserRating integerValue]>=1) && ([self.beerUserRating integerValue]<=5)) {
+        self.rating = [self.beerPredictedRating integerValue];
+        [self initialSetUserRating:[self.beerUserRating integerValue]];
     }
     else{
-        if ([beerPredictedRating integerValue]==0) {
+        if ([self.beerPredictedRating integerValue]==0) {
             self.rating = 0;
             [self unsetUserRating];
         }
         else {
-            self.rating = [beerPredictedRating integerValue];
+            self.rating = [self.beerPredictedRating integerValue];
             [self unsetUserRating];
         }
     }

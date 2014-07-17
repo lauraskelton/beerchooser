@@ -1,8 +1,8 @@
 //
-//  BeerChooserAPIDataManager.h
+//  BeerDetailDataManager.h
 //  BeerChooser
 //
-//  Created by Laura Skelton on 7/14/14.
+//  Created by Laura Skelton on 7/16/14.
 //  Copyright (c) 2014 Laura Skelton. All rights reserved.
 //
 
@@ -11,11 +11,10 @@
 @class CoreDataStore;
 @class Beer;
 
-@interface BeerChooserAPIDataManager : NSObject
+@interface BeerDetailDataManager : NSObject
 
 @property (nonatomic, strong) CoreDataStore *dataStore;
-@property (nonatomic, retain) NSString *indexString;
 
-- (void)addNewBeer:(Beer *)aBeer;
+- (void)fetchDetailsForBeer:(Beer *)beer;
 
 @end

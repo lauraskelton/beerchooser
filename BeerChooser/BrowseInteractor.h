@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "BrowseInteractorIO.h"
-#import "BeerChooserAPINetworkDelegateInterface.h"
+#import "BrowseAPINetworkDelegateInterface.h"
 
-@class      BrowseDataManager, BeerChooserAPINetwork;
+@class      BrowseDataManager, BrowseAPINetwork;
 
-@interface BrowseInteractor : NSObject <BrowseInteractorInput, BeerChooserAPINetworkDelegate>
+@interface BrowseInteractor : NSObject <BrowseInteractorInput, BrowseAPINetworkDelegate>
 
 @property (nonatomic, weak)     id<BrowseInteractorOutput> output;
 
-- (instancetype)initWithDataManager:(BrowseDataManager *)dataManager andAPINetwork:(BeerChooserAPINetwork *)apiNetwork;
+- (instancetype)initWithDataManager:(BrowseDataManager *)dataManager andAPINetwork:(BrowseAPINetwork *)apiNetwork;
 
 @end

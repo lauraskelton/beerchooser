@@ -128,4 +128,13 @@ static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{    
+    BrowseBeersDisplaySection *section = self.data.sections[indexPath.section];
+    BrowseBeersDisplayItem *item = section.items[indexPath.row];
+    
+    [self.eventHandler showDetailViewWithDisplayItem:item];
+
+}
+
 @end

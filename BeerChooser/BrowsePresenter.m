@@ -16,11 +16,19 @@
 
 @implementation BrowsePresenter
 
+
+#pragma mark - Browse Module Interface
+
 - (void)updateView
 {
     [self.browseInteractor findBrowseBeers];
 }
 
+- (void)showDetailViewWithDisplayItem:(BrowseBeersDisplayItem *)displayItem
+{
+    // present beer detail view with this item data
+    [self.browseWireframe presentBeerDetailInterfaceWithDisplayItem:displayItem];
+}
 
 #pragma mark - Browse Interactor Output
 
@@ -50,6 +58,18 @@
     [collector addBrowseBeers:beers];
     
     return [collector collectedDisplayData];
+}
+
+#pragma mark - Beer Detail Module Delegate
+
+- (void)beerDetailModuleDidCancelView
+{
+    // No action necessary
+}
+
+- (void)beerDetailModuleDidSaveRating
+{
+    // No action necessary
 }
 
 @end

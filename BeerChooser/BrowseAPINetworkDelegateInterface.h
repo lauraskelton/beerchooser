@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 // This protocol becomes the way by which something else can hear back about what happened inside of this module
-@protocol BeerChooserAPINetworkDelegate <NSObject>
+@protocol BrowseAPINetworkDelegate <NSObject>
 
-- (void)beerChooserAPIError;
-- (void)beerChooserAPIGotData;
+- (void)browseAPIError;
+- (void)browseAPIGotData;
 
 @end

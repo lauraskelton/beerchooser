@@ -11,12 +11,12 @@
 #import "Beer.h"
 #import "BrowseBeer.h"
 #import "NSArray+POBJ.h"
-#import "BeerChooserAPINetwork.h"
+#import "BrowseAPINetwork.h"
 
 @interface BrowseInteractor()
 
 @property (nonatomic, strong)   BrowseDataManager *dataManager;
-@property (nonatomic, strong)   BeerChooserAPINetwork *apiNetwork;
+@property (nonatomic, strong)   BrowseAPINetwork *apiNetwork;
 
 - (void)findDownloadedBrowseBeers;
 
@@ -25,7 +25,7 @@
 
 @implementation BrowseInteractor
 
-- (instancetype)initWithDataManager:(BrowseDataManager *)dataManager andAPINetwork:(BeerChooserAPINetwork *)apiNetwork
+- (instancetype)initWithDataManager:(BrowseDataManager *)dataManager andAPINetwork:(BrowseAPINetwork *)apiNetwork
 {
     if ((self = [super init]))
     {
@@ -59,19 +59,19 @@
     
     return [validBeers arrayFromObjectsCollectedWithBlock:^id(Beer *aBeer) {
         
-        return [BrowseBeer browseBeerWithName:aBeer.beerName brewery:aBeer.brewery userRating:aBeer.userRating predictedRating:aBeer.predictedRating];
+        return [BrowseBeer browseBeerWithName:aBeer.beerName brewery:aBeer.brewery userRating:aBeer.userRating predictedRating:aBeer.predictedRating beerID:aBeer.beerID];
     }];
 }
 
-#pragma mark - BeerChooser API Network Delegate
+#pragma mark - Browse API Network Delegate
 
-- (void)beerChooserAPIError
+- (void)browseAPIError
 {
     // handle API error
     NSLog(@"API Error");
 }
 
-- (void)beerChooserAPIGotData
+- (void)browseAPIGotData
 {
     // tell presenter to update view with new data
     NSLog(@"API got data");

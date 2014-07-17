@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Laura Skelton. All rights reserved.
 //
 
-#import "BeerChooserAPIDataManager.h"
+#import "BrowseAPIDataManager.h"
 
 #import "ManagedBeer.h"
 #import "CoreDataStore.h"
 #import "Beer.h"
 
-@implementation BeerChooserAPIDataManager
+@implementation BrowseAPIDataManager
 
 - (void)addNewBeer:(Beer *)aBeer
 {

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class BrowseBeersDisplayData;
+@class BrowseBeersDisplayData, BrowseBeer;
 
 
 // Defines the public interface that something else can use to drive the user interface
@@ -17,5 +17,6 @@
 - (void)showNoContentMessage;
 - (void)showBrowseBeersDisplayData:(BrowseBeersDisplayData *)data;
 - (void)reloadEntries;
+- (void)browseBeer:(BrowseBeer *)browseBeer foundImage:(UIImage *)image;
 
 @end

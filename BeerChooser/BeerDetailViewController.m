@@ -8,32 +8,31 @@
 
 #import "BeerDetailViewController.h"
 #import "BeerRatingView.h"
+#import "BrowseBeer.h"
 
 @interface BeerDetailViewController () <RatingDelegate>
 
 @property (nonatomic, weak) IBOutlet UILabel *beerNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *breweryLabel;
 @property (nonatomic, weak) IBOutlet BeerRatingView *ratingView;
+@property (nonatomic, weak) IBOutlet UIImageView *beerLabelImageView;
 
-@property (nonatomic, retain) NSString *beerName;
-@property (nonatomic, retain) NSString *brewery;
-@property (nonatomic, retain) NSNumber *predictedRating;
-@property (nonatomic, retain) NSNumber *userRating;
-@property (nonatomic, retain) NSNumber *beerID;
+@property (nonatomic, retain) BrowseBeer *browseBeer;
 
 @end
 
 @implementation BeerDetailViewController
-@synthesize beerName = _beerName, brewery = _brewery, predictedRating = _predictedRating, userRating = _userRating, beerID = _beerID;
+@synthesize browseBeer = _browseBeer;
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    self.beerNameLabel.text = _beerName;
-    self.breweryLabel.text = _brewery;
-    [self.ratingView ratingViewIsSmall:NO predictedRating:_predictedRating userRating:_userRating];
-    //[self.ratingView setBeerPredictedRating:_predictedRating andBeerUserRating:_userRating];
+    self.beerNameLabel.text = _browseBeer.beerName;
+    self.breweryLabel.text = _browseBeer.brewery;
+    [self.ratingView ratingViewIsSmall:NO predictedRating:_browseBeer.predictedRating userRating:_browseBeer.userRating];
+    
+    self.beerLabelImageView.image = [self.eventHandler findImageWithBrowseBeer:_browseBeer];
 
 }
 
@@ -52,25 +51,9 @@
 
 #pragma mark - BeerDetailViewInterface
 
-- (void)setBeerName:(NSString *)beerName
+- (void)setBrowseBeer:(BrowseBeer *)browseBeer
 {
-    _beerName = beerName;
-}
-
-- (void)setBrewery:(NSString *)brewery
-{
-    _brewery = brewery;
-}
-
-- (void)setPredictedRating:(NSNumber *)predictedRating andUserRating:(NSNumber *)userRating
-{
-    _predictedRating = predictedRating;
-    _userRating = userRating;
-}
-
-- (void)setBeerID:(NSNumber *)beerID
-{
-    _beerID = beerID;
+    _browseBeer = browseBeer;
 }
 
 - (void)finishedUpdatingRating
@@ -78,12 +61,21 @@
     // cancel rating loading view
 }
 
+- (void)browseBeer:(BrowseBeer *)browseBeer foundImage:(UIImage *)image
+{
+    if ([browseBeer isEqual:_browseBeer]) {
+        // this beer is currently visible
+        self.beerLabelImageView.image = image;
+    }
+    // we don't need to do anything if the beer is not visible
+}
+
 #pragma mark - Rating View Delegate
 
 - (void)ratingView:(RatingView *)ratingView didChangeUserRatingFrom:(NSInteger)previousUserRating
 				to:(NSInteger)userRating
 {
-    [self.eventHandler saveRating:@(userRating) forBeer:self.beerID];
+    [self.eventHandler saveRating:@(userRating) forBeer:_browseBeer.beerID];
 }
 
 

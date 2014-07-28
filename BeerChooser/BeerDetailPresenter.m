@@ -12,7 +12,7 @@
 #import "BeerDetailViewInterface.h"
 #import "BeerDetailWireframe.h"
 
-#import "BrowseBeersDisplayItem.h"
+#import "BrowseBeer.h"
 
 @implementation BeerDetailPresenter
 
@@ -29,13 +29,15 @@
     [self.beerDetailModuleDelegate beerDetailModuleDidSaveRating];
 }
 
-
-- (void)configureUserInterfaceForPresentation:(id<BeerDetailViewInterface>)beerDetailViewUserInterface withDisplayItem:(BrowseBeersDisplayItem *)displayItem
+- (UIImage *)findImageWithBrowseBeer:(BrowseBeer *)browseBeer
 {
-    [beerDetailViewUserInterface setBeerName:displayItem.beerName];
-    [beerDetailViewUserInterface setBrewery:displayItem.brewery];
-    [beerDetailViewUserInterface setPredictedRating:displayItem.predictedRating andUserRating:displayItem.userRating];
-    [beerDetailViewUserInterface setBeerID:displayItem.beerID];
+    // tell API to download item then update this cell's imageview if it's still displaying the same beer
+    return [self.beerDetailInteractor findImageWithBrowseBeer:browseBeer];
+}
+
+- (void)configureUserInterfaceForPresentation:(id<BeerDetailViewInterface>)beerDetailViewUserInterface withBrowseBeer:(BrowseBeer *)browseBeer
+{
+    [beerDetailViewUserInterface setBrowseBeer:browseBeer];
 
 }
 
@@ -43,6 +45,11 @@
 - (void)finishedUpdatingRating
 {
     [self.userInterface finishedUpdatingRating];
+}
+
+- (void)foundImage:(UIImage *)image forBrowseBeer:(BrowseBeer *)browseBeer
+{
+    [self.userInterface browseBeer:browseBeer foundImage:image];
 }
 
 @end

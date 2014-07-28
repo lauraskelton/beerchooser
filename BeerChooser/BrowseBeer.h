@@ -12,12 +12,14 @@
 @interface BrowseBeer : NSObject
 @property (nonatomic, readonly, strong) NSString*                 beerName;
 @property (nonatomic, readonly, copy)   NSString*               brewery;
+@property (nonatomic, readonly, copy)   NSString*               imgURL;
 @property (nonatomic, readonly, copy)   NSNumber*               userRating;
 @property (nonatomic, readonly, copy)   NSNumber*               predictedRating;
 @property (nonatomic, readonly, copy)   NSNumber*               beerID;
 
 + (instancetype)browseBeerWithName:(NSString *)beerName
                            brewery:(NSString *)brewery
+                           imgURL:(NSString *)imgURL
                         userRating:(NSNumber *)userRating
                    predictedRating:(NSNumber *)predictedRating
                             beerID:(NSNumber *)beerID;

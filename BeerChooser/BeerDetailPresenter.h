@@ -14,8 +14,7 @@
 
 @class BeerDetailInteractor;
 @class BeerDetailWireframe;
-@class BrowseBeersDisplayItem;
-
+@class BrowseBeer;
 @protocol BeerDetailModuleDelegate;
 @protocol BeerDetailViewInterface;
 
@@ -28,6 +27,6 @@
 
 @property (nonatomic, strong) UIViewController<BeerDetailViewInterface> *userInterface;
 
-- (void)configureUserInterfaceForPresentation:(id<BeerDetailViewInterface>)beerDetailViewUserInterface withDisplayItem:(BrowseBeersDisplayItem *)displayItem;
+- (void)configureUserInterfaceForPresentation:(id<BeerDetailViewInterface>)beerDetailViewUserInterface withBrowseBeer:(BrowseBeer *)browseBeer;
 
 @end

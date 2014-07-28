@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@class BrowseBeersDisplayItem;
+@class BrowseBeer;
 
 @protocol BrowseModuleInterface <NSObject>
 
 - (void)updateView;
-- (void)showDetailViewWithDisplayItem:(BrowseBeersDisplayItem *)displayItem;
+- (void)showDetailViewWithBrowseBeer:(BrowseBeer *)browseBeer;
+- (UIImage *)findImageWithBrowseBeer:(BrowseBeer *)browseBeer;
 
 @end

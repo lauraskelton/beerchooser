@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class BrowseBeer;
+
 @protocol BeerDetailModuleInterface <NSObject>
 
 - (void)cancelView;
 - (void)saveRating:(NSNumber *)rating forBeer:(NSNumber *)beerID;
+- (UIImage *)findImageWithBrowseBeer:(BrowseBeer *)browseBeer;
 
 @end

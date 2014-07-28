@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class BrowseBeer;
+
 @protocol BeerDetailViewInterface <NSObject>
 
-- (void)setBeerName:(NSString *)beerName;
-- (void)setBrewery:(NSString *)brewery;
-- (void)setPredictedRating:(NSNumber *)predictedRating andUserRating:(NSNumber *)userRating;
-- (void)setBeerID:(NSNumber *)beerID;
+- (void)setBrowseBeer:(BrowseBeer *)browseBeer;
 - (void)finishedUpdatingRating;
+- (void)browseBeer:(BrowseBeer *)browseBeer foundImage:(UIImage *)image;
 
 @end

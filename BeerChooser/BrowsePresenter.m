@@ -24,10 +24,16 @@
     [self.browseInteractor findBrowseBeers];
 }
 
-- (void)showDetailViewWithDisplayItem:(BrowseBeersDisplayItem *)displayItem
+- (void)showDetailViewWithBrowseBeer:(BrowseBeer *)browseBeer
 {
     // present beer detail view with this item data
-    [self.browseWireframe presentBeerDetailInterfaceWithDisplayItem:displayItem];
+    [self.browseWireframe presentBeerDetailInterfaceWithBrowseBeer:browseBeer];
+}
+
+- (UIImage *)findImageWithBrowseBeer:(BrowseBeer *)browseBeer
+{
+    // tell API to download item then update this cell's imageview if it's still displaying the same beer
+    return [self.browseInteractor findImageWithBrowseBeer:browseBeer];
 }
 
 #pragma mark - Browse Interactor Output
@@ -42,6 +48,11 @@
     {
         [self updateUserInterfaceWithBeers:beers];
     }
+}
+
+- (void)foundImage:(UIImage *)image forBrowseBeer:(BrowseBeer *)browseBeer
+{
+    [self.userInterface browseBeer:browseBeer foundImage:image];
 }
 
 

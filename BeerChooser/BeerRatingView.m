@@ -80,8 +80,8 @@
               forState:kRatingViewThreeQuarterSelected];
 	[self setBeerImage:[UIImage imageNamed:@"small-beer-hot.png"]
               forState:kRatingViewHot];
-	[self setBeerImage:[UIImage imageNamed:@"small-beer-highlighted.png"]
-              forState:kRatingViewHighlighted];
+	//[self setBeerImage:[UIImage imageNamed:@"small-beer-highlighted.png"]
+             // forState:kRatingViewHighlighted];
 	[self setBeerImage:[UIImage imageNamed:@"small-beer-userselected.png"]
               forState:kRatingViewUserSelected];
 	

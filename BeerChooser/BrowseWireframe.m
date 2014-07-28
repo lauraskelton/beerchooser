@@ -15,7 +15,7 @@
 
 #import "BrowseBeersDisplayData.h"
 #import "BrowseBeersDisplaySection.h"
-#import "BrowseBeersDisplayItem.h"
+#import "BrowseBeer.h"
 
 
 static NSString *BrowseViewControllerIdentifier = @"BrowseViewController";
@@ -30,9 +30,9 @@ static NSString *BrowseNavigationControllerIdentifier = @"BrowseNavigationContro
 
 @implementation BrowseWireframe
 
-- (void)presentBeerDetailInterfaceWithDisplayItem:(BrowseBeersDisplayItem *)displayItem
+- (void)presentBeerDetailInterfaceWithBrowseBeer:(BrowseBeer *)browseBeer
 {
-    [self.beerDetailWireframe presentBeerDetailInterfaceFromNavigationController:self.navigationController withDisplayItem:displayItem];
+    [self.beerDetailWireframe presentBeerDetailInterfaceFromNavigationController:self.navigationController withBrowseBeer:browseBeer];
 }
 
 -(UIViewController *)createBrowseNavigationController
@@ -69,10 +69,17 @@ static NSString *BrowseNavigationControllerIdentifier = @"BrowseNavigationContro
     return viewController;
 }
 
-
 - (UIStoryboard *)mainStoryboard
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone"
+    NSString *storyboardName;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        storyboardName = @"Main_iPad";
+    } else {
+        storyboardName = @"Main_iPhone";
+    }
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName
                                                          bundle:[NSBundle mainBundle]];
     
     return storyboard;

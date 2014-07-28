@@ -12,6 +12,7 @@
 
 #import "CoreDataStore.h"
 #import "BaseAPINetwork.h"
+#import "BaseImageDownloader.h"
 
 #import "BrowseConfig.h"
 
@@ -51,6 +52,8 @@
     // Root Level Classes
     CoreDataStore *dataStore = [[CoreDataStore alloc] init];
     BaseAPINetwork *baseAPINetwork = [[BaseAPINetwork alloc] init];
+    BaseImageDownloader *baseImageDownloader = [[BaseImageDownloader alloc] init];
+
     self.rootWireframe = [[RootWireframe alloc] init];
     
     self.moduleArray = [@[] mutableCopy];
@@ -60,7 +63,7 @@
     // Create Browse Module instance for each page
     for (NSDictionary *pageDictionary in pageTypes.pagesArray) {
         PageType *pageType = [[PageType alloc] initWithDictionary:pageDictionary];
-        BrowseConfig *browseConfig = [[BrowseConfig alloc] initWithCoreDataStore:dataStore baseAPINetwork:baseAPINetwork andPageType:pageType];
+        BrowseConfig *browseConfig = [[BrowseConfig alloc] initWithCoreDataStore:dataStore baseAPINetwork:baseAPINetwork baseImageDownloader:baseImageDownloader andPageType:pageType];
         [self.moduleArray addObject:browseConfig];
         [self.viewControllersArray addObject:browseConfig.viewController];
     }

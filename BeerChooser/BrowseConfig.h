@@ -8,15 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@class CoreDataStore, PageType, BaseAPINetwork;
+@class CoreDataStore, PageType, BaseAPINetwork, BaseImageDownloader;
 
 @interface BrowseConfig : NSObject
 
 @property (nonatomic, retain) CoreDataStore *dataStore;
 @property (nonatomic, retain) BaseAPINetwork *baseAPINetwork;
+@property (nonatomic, retain) BaseImageDownloader *baseImageDownloader;
 @property (nonatomic, retain) PageType *pageType;
 @property (nonatomic, retain) UIViewController *viewController;
 
-- (id)initWithCoreDataStore:(CoreDataStore *)dataStore baseAPINetwork:(BaseAPINetwork *)baseAPINetwork andPageType:(PageType *)pageType;
+- (id)initWithCoreDataStore:(CoreDataStore *)dataStore baseAPINetwork:(BaseAPINetwork *)baseAPINetwork baseImageDownloader:(BaseImageDownloader *)baseImageDownloader andPageType:(PageType *)pageType;
 
 @end

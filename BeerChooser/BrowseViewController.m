@@ -8,10 +8,9 @@
 
 #import "BrowseViewController.h"
 
-#import "Beer.h"
 #import "BrowseBeersDisplayData.h"
 #import "BrowseBeersDisplaySection.h"
-#import "BrowseBeersDisplayItem.h"
+#import "BrowseBeer.h"
 #import "BeerTableViewCell.h"
 
 
@@ -83,6 +82,11 @@ static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
     [self reloadEntries];
 }
 
+- (void)browseBeer:(BrowseBeer *)browseBeer foundImage:(UIImage *)image
+{
+    // we're not currently displaying the image in the beer list view
+}
+
 
 - (void)reloadEntries
 {
@@ -117,7 +121,7 @@ static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BrowseBeersDisplaySection *section = self.data.sections[indexPath.section];
-    BrowseBeersDisplayItem *item = section.items[indexPath.row];
+    BrowseBeer *item = section.items[indexPath.row];
     
     BeerTableViewCell *cell = (BeerTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:BrowseEntryCellIdentifier forIndexPath:indexPath];
     
@@ -131,9 +135,9 @@ static NSString* const BrowseEntryCellIdentifier = @"BeerTableViewCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {    
     BrowseBeersDisplaySection *section = self.data.sections[indexPath.section];
-    BrowseBeersDisplayItem *item = section.items[indexPath.row];
+    BrowseBeer *item = section.items[indexPath.row];
     
-    [self.eventHandler showDetailViewWithDisplayItem:item];
+    [self.eventHandler showDetailViewWithBrowseBeer:item];
 
 }
 

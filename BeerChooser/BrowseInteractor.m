@@ -43,6 +43,11 @@
     [_apiNetwork getBeersToDrink];
 }
 
+- (UIImage *)findImageWithBrowseBeer:(BrowseBeer *)browseBeer
+{
+    return [_apiNetwork getImageForBeer:browseBeer];
+}
+
 - (void)findDownloadedBrowseBeers
 {
     __weak typeof(self) welf = self;
@@ -59,7 +64,7 @@
     
     return [validBeers arrayFromObjectsCollectedWithBlock:^id(Beer *aBeer) {
         
-        return [BrowseBeer browseBeerWithName:aBeer.beerName brewery:aBeer.brewery userRating:aBeer.userRating predictedRating:aBeer.predictedRating beerID:aBeer.beerID];
+        return [BrowseBeer browseBeerWithName:aBeer.beerName brewery:aBeer.brewery imgURL:aBeer.imgURL userRating:aBeer.userRating predictedRating:aBeer.predictedRating beerID:aBeer.beerID];
     }];
 }
 
@@ -76,6 +81,13 @@
     // tell presenter to update view with new data
     NSLog(@"API got data");
     [self findDownloadedBrowseBeers];
+}
+
+- (void)browseAPIGotImage:(UIImage *)image forBrowseBeer:(BrowseBeer *)browseBeer
+{
+    // tell presenter to update view with new image
+    NSLog(@"API got image");
+    [self.output foundImage:image forBrowseBeer:browseBeer];
 }
 
 @end

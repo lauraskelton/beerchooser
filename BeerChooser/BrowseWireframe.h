@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class BrowsePresenter, BrowseViewController, BeerDetailWireframe, BrowseBeersDisplayItem;
+@class BrowsePresenter, BrowseViewController, BeerDetailWireframe, BrowseBeer;
 
 @interface BrowseWireframe : NSObject
 
@@ -17,6 +17,6 @@
 @property (nonatomic, retain) NSString *pageTitle;
 
 -(UIViewController *)createBrowseNavigationController;
-- (void)presentBeerDetailInterfaceWithDisplayItem:(BrowseBeersDisplayItem *)displayItem;
+- (void)presentBeerDetailInterfaceWithBrowseBeer:(BrowseBeer *)browseBeer;
 
 @end

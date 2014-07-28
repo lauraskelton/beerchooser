@@ -11,7 +11,7 @@
 #import "BeerDetailPresenter.h"
 #import "BeerDetailViewController.h"
 
-#import "BrowseBeersDisplayItem.h"
+#import "BrowseBeer.h"
 
 static NSString *BeerDetailViewControllerIdentifier = @"BeerDetailViewController";
 
@@ -23,22 +23,38 @@ static NSString *BeerDetailViewControllerIdentifier = @"BeerDetailViewController
 
 @implementation BeerDetailWireframe
 
-- (void)presentBeerDetailInterfaceFromNavigationController:(UINavigationController *)navigationController withDisplayItem:(BrowseBeersDisplayItem *)displayItem
+- (void)presentBeerDetailInterfaceFromNavigationController:(UINavigationController *)navigationController withBrowseBeer:(BrowseBeer *)browseBeer
 {
     BeerDetailViewController *beerDetailViewController = [self beerDetailViewController];
     beerDetailViewController.eventHandler = self.beerDetailPresenter;
+    self.beerDetailPresenter.userInterface = beerDetailViewController;
     
-    [self.beerDetailPresenter configureUserInterfaceForPresentation:beerDetailViewController withDisplayItem:displayItem];
+    [self.beerDetailPresenter configureUserInterfaceForPresentation:beerDetailViewController withBrowseBeer:browseBeer];
     
-    [navigationController pushViewController:beerDetailViewController animated:YES];
+    [self showDetailView:beerDetailViewController inNavigationController:navigationController];
     
     self.navigationController = navigationController;
 }
 
+- (void)showDetailView:(UIViewController *)detailView inNavigationController:(UINavigationController *)navigationController
+{
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        detailView.modalPresentationStyle = UIModalPresentationFormSheet;
+        [navigationController presentViewController:detailView animated:YES completion:nil];
+    } else {
+        [navigationController pushViewController:detailView animated:YES];
+    }
+}
 
 - (void)dismissBeerDetailInterface
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 
@@ -53,7 +69,15 @@ static NSString *BeerDetailViewControllerIdentifier = @"BeerDetailViewController
 
 - (UIStoryboard *)mainStoryboard
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone"
+    NSString *storyboardName;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        storyboardName = @"Main_iPad";
+    } else {
+        storyboardName = @"Main_iPhone";
+    }
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName
                                                          bundle:[NSBundle mainBundle]];
     
     return storyboard;

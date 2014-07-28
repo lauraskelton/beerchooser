@@ -10,7 +10,7 @@
 
 #import "BeerDetailDataManager.h"
 #import "BeerDetailAPINetwork.h"
-#import "Beer.h"
+#import "BrowseBeer.h"
 
 @interface BeerDetailInteractor()
 
@@ -39,6 +39,11 @@
     [_apiNetwork updateRating:newUserRating forBeerWithID:beerID];
 }
 
+- (UIImage *)findImageWithBrowseBeer:(BrowseBeer *)browseBeer
+{
+    return [_apiNetwork getImageForBeer:browseBeer];
+}
+
 #pragma mark - Beer Detail API Network Delegate
 
 - (void)beerDetailAPIError
@@ -53,6 +58,13 @@
     // tell presenter to update view
     NSLog(@"API got data");
     [self.output finishedUpdatingRating];
+}
+
+- (void)beerDetailAPIGotImage:(UIImage *)image forBrowseBeer:(BrowseBeer *)browseBeer
+{
+    // tell presenter to update view with new image
+    NSLog(@"API got image");
+    [self.output foundImage:image forBrowseBeer:browseBeer];
 }
 
 @end

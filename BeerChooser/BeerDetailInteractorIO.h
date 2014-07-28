@@ -8,14 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@class BrowseBeer;
 
 @protocol BeerDetailInteractorInput <NSObject>
 - (void)updateRating:(NSNumber *)newUserRating forBeerWithID:(NSNumber *)beerID;
+- (UIImage *)findImageWithBrowseBeer:(BrowseBeer *)browseBeer;
 @end
 
 
 @protocol BeerDetailInteractorOutput <NSObject>
 
 - (void)finishedUpdatingRating;
+- (void)foundImage:(UIImage *)image forBrowseBeer:(BrowseBeer *)browseBeer;
 
 @end

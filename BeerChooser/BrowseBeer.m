@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSString*                 beerName;
 @property (nonatomic, copy)   NSString*               brewery;
+@property (nonatomic, copy)   NSString*               imgURL;
 @property (nonatomic, copy)   NSNumber*               userRating;
 @property (nonatomic, copy)   NSNumber*               predictedRating;
 @property (nonatomic, copy)   NSNumber*               beerID;
@@ -24,6 +25,7 @@
 
 + (instancetype)browseBeerWithName:(NSString *)beerName
                            brewery:(NSString *)brewery
+                            imgURL:(NSString *)imgURL
                         userRating:(NSNumber *)userRating
                    predictedRating:(NSNumber *)predictedRating
                             beerID:(NSNumber *)beerID
@@ -32,6 +34,7 @@
     
     browseBeer.beerName = beerName;
     browseBeer.brewery = brewery;
+    browseBeer.imgURL = imgURL;
     browseBeer.userRating = userRating;
     browseBeer.predictedRating = predictedRating;
     browseBeer.beerID = beerID;

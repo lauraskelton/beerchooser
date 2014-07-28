@@ -12,7 +12,7 @@
 @interface BrowseBeersDisplaySection : NSObject
 @property (nonatomic, readonly, copy)   NSString*   name;
 @property (nonatomic, readonly, copy)   NSString*   imageName;
-@property (nonatomic, readonly, copy)   NSArray*    items;  // array of BrowseBeersDisplayItem
+@property (nonatomic, readonly, copy)   NSArray*    items;  // array of BrowseBeers
 
 + (instancetype)browseBeersDisplaySectionWithName:(NSString *)name
                                      imageName:(NSString *)imageName

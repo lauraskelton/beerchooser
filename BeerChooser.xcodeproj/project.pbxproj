@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		8292BDDF197A99400036D29A /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8292BDE2197A99410036D29A /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				8292BDE3197A994F0036D29A /* Run Script */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F5140EF604249E58D0439B8 /* libPods-BeerChooserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DB41D4B04F48CFAAFF9669 /* libPods-BeerChooserTests.a */; };
 		8207295D196B46E6001C8A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295C196B46E6001C8A03 /* Foundation.framework */; };
@@ -16,8 +30,6 @@
 		8207296D196B46E6001C8A03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207296C196B46E6001C8A03 /* AppDelegate.m */; };
 		82072970196B46E6001C8A03 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8207296E196B46E6001C8A03 /* Main_iPhone.storyboard */; };
 		82072973196B46E6001C8A03 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82072971196B46E6001C8A03 /* Main_iPad.storyboard */; };
-		82072976196B46E6001C8A03 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82072975196B46E6001C8A03 /* FirstViewController.m */; };
-		82072979196B46E6001C8A03 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82072978196B46E6001C8A03 /* SecondViewController.m */; };
 		8207297B196B46E6001C8A03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8207297A196B46E6001C8A03 /* Images.xcassets */; };
 		82072982196B46E6001C8A03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82072981196B46E6001C8A03 /* XCTest.framework */; };
 		82072983196B46E6001C8A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8207295C196B46E6001C8A03 /* Foundation.framework */; };
@@ -25,6 +37,10 @@
 		8207298C196B46E6001C8A03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8207298A196B46E6001C8A03 /* InfoPlist.strings */; };
 		8207298E196B46E6001C8A03 /* BeerChooserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8207298D196B46E6001C8A03 /* BeerChooserTests.m */; };
 		82283720196F55B000BF03C6 /* BrowseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8228371F196F55B000BF03C6 /* BrowseWireframe.m */; };
+		823A5FB71986B42A00CE4604 /* BrowseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A5FB61986B42A00CE4604 /* BrowseCollectionViewController.m */; };
+		823A5FBF1986BB6100CE4604 /* BeerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A5FBE1986BB6100CE4604 /* BeerCollectionViewCell.m */; };
+		823A5FC21986E47700CE4604 /* TmpFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A5FC11986E47700CE4604 /* TmpFileStore.m */; };
+		823A5FC61986F07400CE4604 /* BaseImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A5FC51986F07400CE4604 /* BaseImageDownloader.m */; };
 		82764DA4196EF603004D26E7 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DA1196EF603004D26E7 /* Configuration.m */; };
 		82764DB0196F1954004D26E7 /* Configuration.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82764DAE196F1954004D26E7 /* Configuration.example.plist */; };
 		82764DB1196F1954004D26E7 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82764DAF196F1954004D26E7 /* Configuration.plist */; };
@@ -40,7 +56,6 @@
 		82764DE8196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DE7196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m */; };
 		82764DEB196F2EA7004D26E7 /* BrowseBeersDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DEA196F2EA7004D26E7 /* BrowseBeersDisplayData.m */; };
 		82764DEE196F2F59004D26E7 /* BrowseBeersDisplaySection.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DED196F2F59004D26E7 /* BrowseBeersDisplaySection.m */; };
-		82764DF1196F2FDA004D26E7 /* BrowseBeersDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DF0196F2FDA004D26E7 /* BrowseBeersDisplayItem.m */; };
 		82764DF4196F324F004D26E7 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DF3196F324F004D26E7 /* BrowseViewController.m */; };
 		82764DF8196F37E2004D26E7 /* BrowseBeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82764DF7196F37E2004D26E7 /* BrowseBeer.m */; };
 		82863C7B1976CF54005E80B3 /* PageTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 82863C7A1976CF54005E80B3 /* PageTypes.m */; };
@@ -129,10 +144,6 @@
 		8207296C196B46E6001C8A03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8207296F196B46E6001C8A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		82072972196B46E6001C8A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		82072974196B46E6001C8A03 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		82072975196B46E6001C8A03 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		82072977196B46E6001C8A03 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		82072978196B46E6001C8A03 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		8207297A196B46E6001C8A03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		82072980196B46E6001C8A03 /* BeerChooserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerChooserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82072981196B46E6001C8A03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -141,6 +152,14 @@
 		8207298D196B46E6001C8A03 /* BeerChooserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerChooserTests.m; sourceTree = "<group>"; };
 		8228371E196F55B000BF03C6 /* BrowseWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseWireframe.h; sourceTree = "<group>"; };
 		8228371F196F55B000BF03C6 /* BrowseWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseWireframe.m; sourceTree = "<group>"; };
+		823A5FB51986B42A00CE4604 /* BrowseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseCollectionViewController.h; sourceTree = "<group>"; };
+		823A5FB61986B42A00CE4604 /* BrowseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseCollectionViewController.m; sourceTree = "<group>"; };
+		823A5FBD1986BB6100CE4604 /* BeerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerCollectionViewCell.h; sourceTree = "<group>"; };
+		823A5FBE1986BB6100CE4604 /* BeerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerCollectionViewCell.m; sourceTree = "<group>"; };
+		823A5FC01986E47700CE4604 /* TmpFileStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TmpFileStore.h; sourceTree = "<group>"; };
+		823A5FC11986E47700CE4604 /* TmpFileStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TmpFileStore.m; sourceTree = "<group>"; };
+		823A5FC41986F07400CE4604 /* BaseImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseImageDownloader.h; sourceTree = "<group>"; };
+		823A5FC51986F07400CE4604 /* BaseImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseImageDownloader.m; sourceTree = "<group>"; };
 		82764DA0196EF603004D26E7 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		82764DA1196EF603004D26E7 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		82764DAE196F1954004D26E7 /* Configuration.example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.example.plist; sourceTree = SOURCE_ROOT; };
@@ -170,8 +189,6 @@
 		82764DEA196F2EA7004D26E7 /* BrowseBeersDisplayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseBeersDisplayData.m; sourceTree = "<group>"; };
 		82764DEC196F2F59004D26E7 /* BrowseBeersDisplaySection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseBeersDisplaySection.h; sourceTree = "<group>"; };
 		82764DED196F2F59004D26E7 /* BrowseBeersDisplaySection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseBeersDisplaySection.m; sourceTree = "<group>"; };
-		82764DEF196F2FDA004D26E7 /* BrowseBeersDisplayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseBeersDisplayItem.h; sourceTree = "<group>"; };
-		82764DF0196F2FDA004D26E7 /* BrowseBeersDisplayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseBeersDisplayItem.m; sourceTree = "<group>"; };
 		82764DF2196F324F004D26E7 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
 		82764DF3196F324F004D26E7 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
 		82764DF5196F3260004D26E7 /* BrowseViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowseViewInterface.h; sourceTree = "<group>"; };
@@ -366,13 +383,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		823A5FBC1986BB5100CE4604 /* BeerCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				823A5FBD1986BB6100CE4604 /* BeerCollectionViewCell.h */,
+				823A5FBE1986BB6100CE4604 /* BeerCollectionViewCell.m */,
+			);
+			name = BeerCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		823A5FC31986EEB900CE4604 /* Display Data */ = {
+			isa = PBXGroup;
+			children = (
+				82764DE6196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.h */,
+				82764DE7196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m */,
+				82764DE9196F2EA7004D26E7 /* BrowseBeersDisplayData.h */,
+				82764DEA196F2EA7004D26E7 /* BrowseBeersDisplayData.m */,
+				82764DEC196F2F59004D26E7 /* BrowseBeersDisplaySection.h */,
+				82764DED196F2F59004D26E7 /* BrowseBeersDisplaySection.m */,
+			);
+			name = "Display Data";
+			sourceTree = "<group>";
+		};
 		82764D9D196EF5C1004D26E7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				82764DB2196F19EA004D26E7 /* Common */,
 				82764DC9196F233B004D26E7 /* Modules */,
 				82BCCB3F196B4CCD00C6DE22 /* App Delegate */,
-				82BCCB40196B4CD200C6DE22 /* View Controllers */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -409,6 +447,8 @@
 				82764DB4196F1A29004D26E7 /* BeerChooser.xcdatamodeld */,
 				82764DBB196F1D11004D26E7 /* CoreDataStore.h */,
 				82764DBC196F1D11004D26E7 /* CoreDataStore.m */,
+				823A5FC01986E47700CE4604 /* TmpFileStore.h */,
+				823A5FC11986E47700CE4604 /* TmpFileStore.m */,
 			);
 			name = "Data Store";
 			sourceTree = "<group>";
@@ -524,14 +564,7 @@
 			children = (
 				82764DE3196F2AD0004D26E7 /* BrowsePresenter.h */,
 				82764DE4196F2AD0004D26E7 /* BrowsePresenter.m */,
-				82764DE6196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.h */,
-				82764DE7196F2C38004D26E7 /* BrowseBeersDisplayDataCollector.m */,
-				82764DE9196F2EA7004D26E7 /* BrowseBeersDisplayData.h */,
-				82764DEA196F2EA7004D26E7 /* BrowseBeersDisplayData.m */,
-				82764DEC196F2F59004D26E7 /* BrowseBeersDisplaySection.h */,
-				82764DED196F2F59004D26E7 /* BrowseBeersDisplaySection.m */,
-				82764DEF196F2FDA004D26E7 /* BrowseBeersDisplayItem.h */,
-				82764DF0196F2FDA004D26E7 /* BrowseBeersDisplayItem.m */,
+				823A5FC31986EEB900CE4604 /* Display Data */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -542,6 +575,8 @@
 				82863C8E1976E75E005E80B3 /* Custom Views */,
 				82764DF2196F324F004D26E7 /* BrowseViewController.h */,
 				82764DF3196F324F004D26E7 /* BrowseViewController.m */,
+				823A5FB51986B42A00CE4604 /* BrowseCollectionViewController.h */,
+				823A5FB61986B42A00CE4604 /* BrowseCollectionViewController.m */,
 				82764DF5196F3260004D26E7 /* BrowseViewInterface.h */,
 			);
 			name = View;
@@ -559,17 +594,18 @@
 		82863C8E1976E75E005E80B3 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				82863C8F1976E79C005E80B3 /* TableViewCells */,
+				82863C8F1976E79C005E80B3 /* Cells */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
 		};
-		82863C8F1976E79C005E80B3 /* TableViewCells */ = {
+		82863C8F1976E79C005E80B3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				823A5FBC1986BB5100CE4604 /* BeerCollectionViewCell */,
 				82BD8918197735080066C63B /* BeerTableViewCell */,
 			);
-			name = TableViewCells;
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		82BCCB3F196B4CCD00C6DE22 /* App Delegate */ = {
@@ -581,17 +617,6 @@
 				82764DC7196F2203004D26E7 /* AppDependencies.m */,
 			);
 			name = "App Delegate";
-			sourceTree = "<group>";
-		};
-		82BCCB40196B4CD200C6DE22 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				82072974196B46E6001C8A03 /* FirstViewController.h */,
-				82072975196B46E6001C8A03 /* FirstViewController.m */,
-				82072977196B46E6001C8A03 /* SecondViewController.h */,
-				82072978196B46E6001C8A03 /* SecondViewController.m */,
-			);
-			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		82BCCB41196B4CD800C6DE22 /* Resources */ = {
@@ -754,6 +779,8 @@
 			children = (
 				82BD894719773A1E0066C63B /* BaseAPINetwork.h */,
 				82BD894819773A1E0066C63B /* BaseAPINetwork.m */,
+				823A5FC41986F07400CE4604 /* BaseImageDownloader.h */,
+				823A5FC51986F07400CE4604 /* BaseImageDownloader.m */,
 			);
 			name = "Network API";
 			sourceTree = "<group>";
@@ -979,6 +1006,7 @@
 			targets = (
 				82072958196B46E6001C8A03 /* BeerChooser */,
 				8207297F196B46E6001C8A03 /* BeerChooserTests */,
+				8292BDDF197A99400036D29A /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -1077,6 +1105,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		8292BDE3197A994F0036D29A /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\nexport company=\"BeerChooser\";\nexport companyID=\"com.beerchooser\";\nexport companyURL=\"http://beerchooser.com\";\nexport target=\"iphoneos\";\n#target=\"macosx\";\nexport outputPath=\"help\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--ignore \"*.m\" \\\n--verbose 4 \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
 		E360FEB7633046C9AC9FDF9B /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1118,12 +1160,14 @@
 				82764DDB196F2785004D26E7 /* BrowseInteractor.m in Sources */,
 				82764DEB196F2EA7004D26E7 /* BrowseBeersDisplayData.m in Sources */,
 				82764DF8196F37E2004D26E7 /* BrowseBeer.m in Sources */,
-				82072979196B46E6001C8A03 /* SecondViewController.m in Sources */,
 				8207296D196B46E6001C8A03 /* AppDelegate.m in Sources */,
 				82283720196F55B000BF03C6 /* BrowseWireframe.m in Sources */,
 				82BCCB43196B4E4400C6DE22 /* README.md in Sources */,
+				823A5FC21986E47700CE4604 /* TmpFileStore.m in Sources */,
 				82764DEE196F2F59004D26E7 /* BrowseBeersDisplaySection.m in Sources */,
+				823A5FB71986B42A00CE4604 /* BrowseCollectionViewController.m in Sources */,
 				82BD8923197737920066C63B /* BeerDetailRatingCell.m in Sources */,
+				823A5FBF1986BB6100CE4604 /* BeerCollectionViewCell.m in Sources */,
 				82C1A57819747D9200A964B4 /* BeerRatingView.m in Sources */,
 				82BD8945197739E20066C63B /* BeerDetailDataManager.m in Sources */,
 				82764DB6196F1A29004D26E7 /* BeerChooser.xcdatamodeld in Sources */,
@@ -1135,9 +1179,8 @@
 				82764DF4196F324F004D26E7 /* BrowseViewController.m in Sources */,
 				82764DCE196F23EA004D26E7 /* NSArray+POBJ.m in Sources */,
 				82C1A5651974597700A964B4 /* BrowseAPIDataManager.m in Sources */,
+				823A5FC61986F07400CE4604 /* BaseImageDownloader.m in Sources */,
 				82E9CC861975ADFB00D90598 /* BrowseConfig.m in Sources */,
-				82764DF1196F2FDA004D26E7 /* BrowseBeersDisplayItem.m in Sources */,
-				82072976196B46E6001C8A03 /* FirstViewController.m in Sources */,
 				82C1A56219742D4500A964B4 /* BrowseAPINetwork.m in Sources */,
 				82863C8D1976E51D005E80B3 /* ManagedBeer.m in Sources */,
 				82764DC1196F1F6F004D26E7 /* Beer.m in Sources */,
@@ -1356,6 +1399,20 @@
 			};
 			name = Release;
 		};
+		8292BDE0197A99410036D29A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8292BDE1197A99410036D29A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1382,6 +1439,15 @@
 			buildConfigurations = (
 				82072995196B46E6001C8A03 /* Debug */,
 				82072996196B46E6001C8A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8292BDE2197A99410036D29A /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8292BDE0197A99410036D29A /* Debug */,
+				8292BDE1197A99410036D29A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

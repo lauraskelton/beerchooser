@@ -10,7 +10,6 @@
 #import "BrowseBeer.h"
 #import "BrowseBeersDisplayData.h"
 #import "BrowseBeersDisplaySection.h"
-#import "BrowseBeersDisplayItem.h"
 #import "NSArray+POBJ.h"
 
 
@@ -33,20 +32,8 @@
 
 - (void)addBrowseBeer:(BrowseBeer *)browseBeer
 {
-    BrowseBeersDisplayItem *displayItem = [self displayItemForBrowseBeer:browseBeer];
-    [self addDisplayItem:displayItem];
-}
-
-
-- (BrowseBeersDisplayItem *)displayItemForBrowseBeer:(BrowseBeer *)browseBeer
-{
-    return [BrowseBeersDisplayItem browseBeersDisplayItemWithName:browseBeer.beerName brewery:browseBeer.brewery userRating:browseBeer.userRating predictedRating:browseBeer.predictedRating beerID:browseBeer.beerID];
-}
-
-- (void)addDisplayItem:(BrowseBeersDisplayItem *)displayItem
-{
     NSMutableArray *sectionItems = [self sectionItems];
-    [sectionItems addObject:displayItem];
+    [sectionItems addObject:browseBeer];
 }
 
 - (NSMutableArray *)sectionItems

@@ -10,6 +10,7 @@
 
 #import "CoreDataStore.h"
 #import "BaseAPINetwork.h"
+#import "BaseImageDownloader.h"
 
 #import "BrowseDataManager.h"
 #import "BrowseInteractor.h"
@@ -37,14 +38,15 @@
 
 
 @implementation BrowseConfig
-@synthesize dataStore = _dataStore, baseAPINetwork = _baseAPINetwork, pageType = _pageType;
+@synthesize dataStore = _dataStore, baseAPINetwork = _baseAPINetwork, baseImageDownloader = _baseImageDownloader, pageType = _pageType;
 
-- (id)initWithCoreDataStore:(CoreDataStore *)dataStore baseAPINetwork:(BaseAPINetwork *)baseAPINetwork andPageType:(PageType *)pageType
+- (id)initWithCoreDataStore:(CoreDataStore *)dataStore baseAPINetwork:(BaseAPINetwork *)baseAPINetwork baseImageDownloader:(BaseImageDownloader *)baseImageDownloader andPageType:(PageType *)pageType
 {
     if ((self = [super init]))
     {
         self.dataStore = dataStore;
         self.baseAPINetwork = baseAPINetwork;
+        self.baseImageDownloader = baseImageDownloader;
         self.pageType = pageType;
         [self configureDependencies];
         self.viewController = [self browseViewController];
@@ -78,10 +80,12 @@
     // Network Classes
     BrowseAPINetwork *apiNetwork = [[BrowseAPINetwork alloc] init];
     apiNetwork.baseAPINetwork = self.baseAPINetwork;
+    apiNetwork.baseImageDownloader = self.baseImageDownloader;
     BrowseAPIDataManager *apiDataManager = [[BrowseAPIDataManager alloc] init];
     
     BeerDetailAPINetwork *beerDetailAPINetwork = [[BeerDetailAPINetwork alloc] init];
     beerDetailAPINetwork.baseAPINetwork = self.baseAPINetwork;
+    beerDetailAPINetwork.baseImageDownloader = self.baseImageDownloader;
     BeerDetailAPIDataManager *beerDetailAPIDataManager = [[BeerDetailAPIDataManager alloc] init];
     
     BeerDetailInteractor *beerDetailInteractor = [[BeerDetailInteractor alloc] initWithDataManager:beerDetailDataManager andAPINetwork:beerDetailAPINetwork];
@@ -112,6 +116,8 @@
     
     // Beer Detail Module Classes
     beerDetailPresenter.beerDetailInteractor = beerDetailInteractor;
+    
+    beerDetailInteractor.output = beerDetailPresenter;
     
     beerDetailWireframe.beerDetailPresenter = beerDetailPresenter;
     

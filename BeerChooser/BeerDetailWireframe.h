@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@class BeerDetailPresenter, BrowseBeersDisplayItem;
+@class BeerDetailPresenter, BrowseBeer;
 
 @interface BeerDetailWireframe : NSObject
 
 @property (nonatomic, strong) BeerDetailPresenter *beerDetailPresenter;
 
-- (void)presentBeerDetailInterfaceFromNavigationController:(UINavigationController *)navigationController withDisplayItem:(BrowseBeersDisplayItem *)displayItem;
+- (void)presentBeerDetailInterfaceFromNavigationController:(UINavigationController *)navigationController withBrowseBeer:(BrowseBeer *)browseBeer;
 - (void)dismissBeerDetailInterface;
 
 @end

@@ -8,8 +8,11 @@
 
 #import "BrowseAPINetwork.h"
 #import "BaseAPINetwork.h"
+#import "BaseImageDownloader.h"
 #import "BrowseAPIDataManager.h"
 #import "Beer.h"
+#import "TmpFileStore.h"
+#import "BrowseBeer.h"
 
 @interface BrowseAPINetwork ()
 
@@ -61,6 +64,16 @@
                           index:index];
         
     [self.apiDataManager addNewBeer:newBeer];
+}
+
+-(UIImage *)getImageForBeer:(BrowseBeer *)browseBeer
+{
+    return [self.baseImageDownloader getImageForBeerID:browseBeer.beerID URL:browseBeer.imgURL completion:^(UIImage *image) {
+            if (image) {
+                // return the image
+                [self.apiNetworkDelegate browseAPIGotImage:image forBrowseBeer:browseBeer];
+            }
+        }];
 }
 
 @end
